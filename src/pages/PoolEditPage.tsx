@@ -1,8 +1,9 @@
 import { useEffect, useState, type FormEvent, type ReactNode } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { ErrorNotice, Loading, LoginPrompt } from '../components/common'
+import { ErrorNotice, LoginPrompt, PageError, PageLoading } from '../components/common'
 import { createPool, getPool, updatePool } from '../lib/api'
 import { useAuth } from '../lib/auth'
+import { errorMessage, toError } from '../lib/errors'
 import { FACILITIES, PREFECTURES, STATUS_LABEL, type FacilityKey } from '../lib/fields'
 import { useMyData } from '../lib/mydata'
 import type { Pool, PoolInput, PoolStatus } from '../lib/types'
@@ -98,11 +99,11 @@ export function PoolEditPage() {
         if (p) setForm(toInput(p))
         else setLoadError(new Error('施設が見つかりません'))
       })
-      .catch((e: unknown) => setLoadError(e instanceof Error ? e : new Error(String(e))))
+      .catch((e: unknown) => setLoadError(toError(e)))
       .finally(() => setLoading(false))
   }, [id])
 
-  if (authLoading || loading) return <main className="page"><Loading /></main>
+  if (authLoading || loading) return <PageLoading />
   if (!session) {
     return (
       <main className="page">
@@ -110,7 +111,7 @@ export function PoolEditPage() {
       </main>
     )
   }
-  if (loadError) return <main className="page"><ErrorNotice error={loadError} /></main>
+  if (loadError) return <PageError error={loadError} />
 
   function set<K extends keyof PoolInput>(k: K, v: PoolInput[K]) {
     setForm((f) => ({ ...f, [k]: v }))
@@ -148,7 +149,7 @@ export function PoolEditPage() {
       await refresh()
       navigate(`/pools/${saved.id}`)
     } catch (err) {
-      setSaveError(err instanceof Error ? err.message : String(err))
+      setSaveError(errorMessage(err))
       setBusy(false)
     }
   }

@@ -1,14 +1,14 @@
 import { LogOut, Settings } from 'lucide-react'
 import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
-import { Avatar, ErrorNotice, Loading, LoginPrompt } from '../components/common'
+import { Avatar, ErrorNotice, Loading, LoginPrompt, PageLoading } from '../components/common'
+import { KcalSummary } from '../components/KcalSummary'
 import { PoolListItem } from '../components/PoolListItem'
 import { TileLegend, TileWall } from '../components/TileWall'
 import { VisitCard } from '../components/VisitCard'
 import { listVisitsByUser } from '../lib/api'
 import { useAuth } from '../lib/auth'
-import { formatBalance } from '../lib/calorie'
-import { countsForCompletion, prefectureOrder } from '../lib/fields'
+import { countsForCompletion, sortPrefectures } from '../lib/fields'
 import { useMyData } from '../lib/mydata'
 import { useAsync } from '../lib/useAsync'
 
@@ -25,10 +25,7 @@ export function MyPage() {
   )
   const done = target.filter((p) => visited.has(p.id)).length
 
-  const prefectures = useMemo(
-    () => [...new Set(pools.map((p) => p.prefecture))].sort((a, b) => prefectureOrder(a) - prefectureOrder(b)),
-    [pools],
-  )
+  const prefectures = useMemo(() => sortPrefectures(pools.map((p) => p.prefecture)), [pools])
   const visitedPrefectures = useMemo(
     () => new Set(pools.filter((p) => visited.has(p.id)).map((p) => p.prefecture)),
     [pools, visited],
@@ -60,7 +57,7 @@ export function MyPage() {
 
   const wishPools = pools.filter((p) => wishes.has(p.id) && !visited.has(p.id))
 
-  if (loading) return <main className="page"><Loading /></main>
+  if (loading) return <PageLoading />
   if (!session) {
     return (
       <main className="page stack">
@@ -92,14 +89,12 @@ export function MyPage() {
         <label className="field" style={{ marginBottom: 10 }}>
           <span className="visually-hidden">都道府県</span>
           <select value={area} onChange={(e) => setArea(e.target.value)}>
-            {[...new Set([area, ...prefectures])]
-              .sort((a, b) => prefectureOrder(a) - prefectureOrder(b))
-              .map((p) => (
-                <option key={p} value={p}>
-                  {p}
-                  {visitedPrefectures.has(p) ? '（行った施設あり）' : ''}
-                </option>
-              ))}
+            {sortPrefectures([area, ...prefectures]).map((p) => (
+              <option key={p} value={p}>
+                {p}
+                {visitedPrefectures.has(p) ? '（行った施設あり）' : ''}
+              </option>
+            ))}
           </select>
         </label>
         <div className="score">
@@ -149,22 +144,7 @@ export function MyPage() {
                 泳いだ距離 <strong>{(totals.distance / 1000).toLocaleString('ja-JP', { maximumFractionDigits: 2 })}km</strong>
               </p>
             )}
-            {totals.hasKcal && (
-              <div className="kcal">
-                <div>
-                  消費
-                  <strong>{totals.burned.toLocaleString('ja-JP')}</strong>
-                </div>
-                <div>
-                  摂取
-                  <strong>{totals.intake.toLocaleString('ja-JP')}</strong>
-                </div>
-                <div>
-                  収支（目安）
-                  <strong>{formatBalance(totals.burned, totals.intake)}</strong>
-                </div>
-              </div>
-            )}
+            {totals.hasKcal && <KcalSummary burned={totals.burned} intake={totals.intake} />}
           </div>
         </>
       )}

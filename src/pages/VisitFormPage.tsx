@@ -1,21 +1,21 @@
 import { Globe, Lock, Plus, X } from 'lucide-react'
 import { useEffect, useMemo, useState, type FormEvent } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
-import { ErrorNotice, Loading, LoginPrompt } from '../components/common'
-import { createVisit, getPool, updateVisit } from '../lib/api'
+import { ErrorNotice, LoginPrompt, PageLoading } from '../components/common'
+import { KcalSummary } from '../components/KcalSummary'
+import { createVisit, getPool, getVisit, updateVisit } from '../lib/api'
 import { useAuth } from '../lib/auth'
 import {
   MEAL_PRESETS,
   STROKES,
   estimateBurnedKcal,
   estimateWeightKg,
-  formatBalance,
   sumIntakeKcal,
   swimMinutes,
 } from '../lib/calorie'
+import { errorMessage } from '../lib/errors'
 import { today } from '../lib/fields'
 import { useMyData } from '../lib/mydata'
-import { supabase } from '../lib/supabase'
 import type { Meal, Stroke, Visibility } from '../lib/types'
 
 type MealRow = { name: string; kcal: string }
@@ -47,8 +47,7 @@ export function VisitFormPage() {
       try {
         let pid = poolIdParam ?? ''
         if (visitId) {
-          const { data, error: e } = await supabase.from('visits').select('*').eq('id', visitId).maybeSingle()
-          if (e) throw new Error(e.message)
+          const data = await getVisit(visitId)
           if (!data) throw new Error('記録が見つかりません')
           pid = data.pool_id
           if (!active) return
@@ -58,7 +57,7 @@ export function VisitFormPage() {
           setDistance(data.swim_distance_m?.toString() ?? '')
           setMinutes(data.swim_minutes?.toString() ?? '')
           if (data.stroke) setStroke(data.stroke)
-          setMeals((data.meals as Meal[]).map((m) => ({ name: m.name, kcal: String(m.kcal) })))
+          setMeals(data.meals.map((m) => ({ name: m.name, kcal: String(m.kcal) })))
           setShowCalories(data.show_calories)
         }
         const p = await getPool(pid)
@@ -66,7 +65,7 @@ export function VisitFormPage() {
         setPoolId(pid)
         setPoolName(p?.name ?? '')
       } catch (e) {
-        if (active) setError(e instanceof Error ? e.message : String(e))
+        if (active) setError(errorMessage(e))
       } finally {
         if (active) setLoading(false)
       }
@@ -94,7 +93,7 @@ export function VisitFormPage() {
   const intake = sumIntakeKcal(cleanMeals)
   const estMinutes = swimMinutes(swim)
 
-  if (authLoading || loading) return <main className="page"><Loading /></main>
+  if (authLoading || loading) return <PageLoading />
   if (!session) {
     return (
       <main className="page">
@@ -129,7 +128,7 @@ export function VisitFormPage() {
       await refresh()
       navigate(`/pools/${poolId}`)
     } catch (err) {
-      setError(err instanceof Error ? err.message : String(err))
+      setError(errorMessage(err))
       setBusy(false)
     }
   }
@@ -230,20 +229,7 @@ export function VisitFormPage() {
         )}
 
         <div className="panel stack">
-          <div className="kcal" aria-live="polite">
-            <div>
-              消費
-              <strong>{burned === null ? '—' : `${burned.toLocaleString('ja-JP')}`}</strong>
-            </div>
-            <div>
-              摂取
-              <strong>{intake === null ? '—' : `${intake.toLocaleString('ja-JP')}`}</strong>
-            </div>
-            <div>
-              収支
-              <strong>{formatBalance(burned, intake) ?? '—'}</strong>
-            </div>
-          </div>
+          <KcalSummary burned={burned} intake={intake} balanceLabel="収支" live />
           <p className="small muted" style={{ margin: 0 }}>
             体重{weight}kg（{attributes?.age_group || attributes?.gender ? '年代・性別の平均' : '成人の平均'}
             ）として計算した目安です。

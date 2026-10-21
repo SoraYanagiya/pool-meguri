@@ -1,6 +1,8 @@
 import { useState, type FormEvent, type ReactNode } from 'react'
+import { errorMessage } from '../lib/errors'
 import { AGE_GROUPS, GENDERS } from '../lib/fields'
 import type { AgeGroup, Gender, ProfileAttributes } from '../lib/types'
+import { ErrorNotice } from './common'
 
 type Props = {
   initial: ProfileAttributes | null
@@ -23,7 +25,7 @@ export function AttributesForm({ initial, submitLabel, onSubmit, secondary }: Pr
     try {
       await onSubmit({ age_group: age || null, gender: gender || null })
     } catch (err) {
-      setError(err instanceof Error ? err.message : String(err))
+      setError(errorMessage(err))
       setBusy(false)
     }
   }
@@ -52,11 +54,7 @@ export function AttributesForm({ initial, submitLabel, onSubmit, secondary }: Pr
           ))}
         </select>
       </label>
-      {error && (
-        <div className="notice notice-error" role="alert">
-          保存できませんでした。{error}
-        </div>
-      )}
+      {error && <ErrorNotice>保存できませんでした。{error}</ErrorNotice>}
       <div className="row">
         <button type="submit" className="btn btn-primary" disabled={busy}>
           {submitLabel}

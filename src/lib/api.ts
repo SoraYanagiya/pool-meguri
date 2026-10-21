@@ -115,6 +115,10 @@ export async function deleteAppearance(id: number): Promise<void> {
 
 // ---- めぐり記録 ----------------------------------------------------------
 
+export async function getVisit(id: string): Promise<Visit | null> {
+  return check(await supabase.from('visits').select('*').eq('id', id).maybeSingle())
+}
+
 export async function listVisitsForPool(poolId: string): Promise<VisitWithRelations[]> {
   // RLS により、他人の記録は公開分のみ、自分の記録は非公開分も返る
   return check(

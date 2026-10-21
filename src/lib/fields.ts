@@ -63,9 +63,14 @@ export const PREFECTURES = [
   '福岡県', '佐賀県', '長崎県', '熊本県', '大分県', '宮崎県', '鹿児島県', '沖縄県',
 ] as const
 
-export function prefectureOrder(p: string): number {
+function prefectureOrder(p: string): number {
   const i = (PREFECTURES as readonly string[]).indexOf(p)
   return i === -1 ? 999 : i
+}
+
+/** 都道府県名を重複なく、北から順に並べる */
+export function sortPrefectures(names: Iterable<string>): string[] {
+  return [...new Set(names)].sort((a, b) => prefectureOrder(a) - prefectureOrder(b))
 }
 
 export function today(): string {

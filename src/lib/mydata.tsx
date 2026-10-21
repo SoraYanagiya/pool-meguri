@@ -1,6 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
 import { useAuth } from './auth'
 import { addWish, getMyAttributes, listMyVisited, listMyWishes, listPools, removeWish } from './api'
+import { toError } from './errors'
 import type { Pool, ProfileAttributes, VisitedSummary } from './types'
 
 type MyData = {
@@ -49,7 +50,7 @@ export function MyDataProvider({ children }: { children: ReactNode }) {
       setPools(await listPools())
       setPoolsError(null)
     } catch (e) {
-      setPoolsError(e instanceof Error ? e : new Error(String(e)))
+      setPoolsError(toError(e))
     } finally {
       setPoolsLoading(false)
     }

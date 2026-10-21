@@ -1,14 +1,14 @@
 import { Navigate, useSearchParams } from 'react-router-dom'
-import { Loading, LoginButtons } from '../components/common'
+import { LoginButtons, PageLoading } from '../components/common'
 import { useAuth } from '../lib/auth'
+import { safeNextPath } from '../lib/paths'
 
 export function LoginPage() {
   const { session, loading } = useAuth()
   const [params] = useSearchParams()
-  const next = params.get('next') ?? '/me'
-  const safeNext = next.startsWith('/') && !next.startsWith('//') ? next : '/me'
+  const safeNext = safeNextPath(params.get('next'))
 
-  if (loading) return <main className="page"><Loading /></main>
+  if (loading) return <PageLoading />
   if (session) return <Navigate to={safeNext} replace />
 
   return (

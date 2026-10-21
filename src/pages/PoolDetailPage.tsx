@@ -2,11 +2,12 @@ import { Check, ExternalLink, Heart, History, Pencil, Plus } from 'lucide-react'
 import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { AppearanceSection } from '../components/AppearanceSection'
-import { ErrorNotice, Loading, LoginPrompt } from '../components/common'
+import { ErrorNotice, Loading, LoginPrompt, PageError, PageLoading } from '../components/common'
 import { FacilityGrid } from '../components/FacilityGrid'
 import { VisitCard } from '../components/VisitCard'
 import { getPool, listVisitsForPool } from '../lib/api'
 import { useAuth } from '../lib/auth'
+import { errorMessage } from '../lib/errors'
 import { STATUS_LABEL, formatDate, indoorLabel } from '../lib/fields'
 import { useMyData } from '../lib/mydata'
 import { useAsync } from '../lib/useAsync'
@@ -19,8 +20,8 @@ export function PoolDetailPage() {
   const visits = useAsync(() => listVisitsForPool(id), [id, session?.user.id])
   const [wishError, setWishError] = useState<string | null>(null)
 
-  if (pool.loading) return <main className="page"><Loading /></main>
-  if (pool.error) return <main className="page"><ErrorNotice error={pool.error} /></main>
+  if (pool.loading) return <PageLoading />
+  if (pool.error) return <PageError error={pool.error} />
   const p = pool.data
   if (!p) {
     return (
@@ -38,7 +39,7 @@ export function PoolDetailPage() {
     try {
       await toggleWish(id)
     } catch (e) {
-      setWishError(e instanceof Error ? e.message : String(e))
+      setWishError(errorMessage(e))
     }
   }
 

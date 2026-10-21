@@ -2,6 +2,7 @@ import { ExternalLink, Pencil, Plus, Trash2, Tv } from 'lucide-react'
 import { useState, type FormEvent } from 'react'
 import { deleteAppearance, listAppearances, saveAppearance } from '../lib/api'
 import { useAuth } from '../lib/auth'
+import { errorMessage } from '../lib/errors'
 import { episodeLabel, formatDate } from '../lib/fields'
 import type { PoolAppearance } from '../lib/types'
 import { useAsync } from '../lib/useAsync'
@@ -112,7 +113,7 @@ function AppearanceForm({
       })
       onDone()
     } catch (err) {
-      setError(err instanceof Error ? err.message : String(err))
+      setError(errorMessage(err))
       setBusy(false)
     }
   }
@@ -123,7 +124,7 @@ function AppearanceForm({
       await deleteAppearance(initial.id)
       onDone()
     } catch (err) {
-      setError(err instanceof Error ? err.message : String(err))
+      setError(errorMessage(err))
     }
   }
 
