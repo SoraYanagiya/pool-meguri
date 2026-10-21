@@ -3,24 +3,12 @@ import { LoaderCircle, LocateFixed } from 'lucide-react'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Circle, CircleMarker, MapContainer, Marker, Popup, TileLayer, Tooltip } from 'react-leaflet'
 import { Link } from 'react-router-dom'
+import { POOL_ICONS } from '../lib/mapIcons'
 import type { Pool } from '../lib/types'
 
 // 施設がないときの表示位置（東京駅付近）
 const FALLBACK: [number, number] = [35.681, 139.767]
 const HERE_ZOOM = 14
-
-function icon(kind: 'visited' | 'normal' | 'out') {
-  const cls = kind === 'visited' ? 'marker marker-visited' : kind === 'out' ? 'marker marker-out' : 'marker'
-  return L.divIcon({
-    className: '',
-    html: `<div class="${cls}"></div>`,
-    iconSize: [18, 18],
-    iconAnchor: [9, 9],
-    popupAnchor: [0, -10],
-  })
-}
-
-const ICONS = { visited: icon('visited'), normal: icon('normal'), out: icon('out') }
 
 const canLocate = typeof navigator !== 'undefined' && 'geolocation' in navigator
 
@@ -113,7 +101,7 @@ export function PoolMap({ pools, isVisited, fitKey }: Props) {
           {located.map((p) => {
             const kind = isVisited(p.id) ? 'visited' : p.status === 'closed' ? 'out' : 'normal'
             return (
-              <Marker key={p.id} position={[p.lat as number, p.lng as number]} icon={ICONS[kind]}>
+              <Marker key={p.id} position={[p.lat as number, p.lng as number]} icon={POOL_ICONS[kind]}>
                 <Popup>
                   <strong>{p.name}</strong>
                   <br />

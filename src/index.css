@@ -552,6 +552,10 @@ select:focus {
   background: #8fa3b1;
 }
 
+.map-spot {
+  height: 220px;
+}
+
 .map-wrap {
   position: relative;
 }
