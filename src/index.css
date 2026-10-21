@@ -552,6 +552,36 @@ select:focus {
   background: #8fa3b1;
 }
 
+.map-wrap {
+  position: relative;
+}
+
+.map-locate {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  padding: 8px;
+  background: var(--surface);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.3);
+}
+
+/* 現在地。施設の四角いマーカーと見分けられるよう丸で示す */
+.here-dot {
+  fill: var(--water-strong);
+  fill-opacity: 1;
+  stroke: #fff;
+  stroke-width: 3;
+}
+
+.here-accuracy {
+  fill: var(--water);
+  fill-opacity: 0.12;
+  stroke: var(--water);
+  stroke-opacity: 0.4;
+  stroke-width: 1;
+}
+
 /* ---- 施設詳細 ------------------------------------------------------- */
 
 .pool-hero {
