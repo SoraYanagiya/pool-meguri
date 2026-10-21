@@ -6,7 +6,7 @@ import { PoolListItem } from '../components/PoolListItem'
 import { PoolMap } from '../components/PoolMap'
 import { useAuth } from '../lib/auth'
 import { listAppearedPoolIds } from '../lib/api'
-import { FACILITIES, prefectureOrder, type FacilityKey } from '../lib/fields'
+import { FACILITIES, sortPrefectures, type FacilityKey } from '../lib/fields'
 import { useAsync } from '../lib/useAsync'
 import { useMyData } from '../lib/mydata'
 
@@ -25,10 +25,7 @@ export function SearchPage() {
   const [onlyAppeared, setOnlyAppeared] = useState(false)
   const [hideClosed, setHideClosed] = useState(true)
 
-  const prefectures = useMemo(
-    () => [...new Set(pools.map((p) => p.prefecture))].sort((a, b) => prefectureOrder(a) - prefectureOrder(b)),
-    [pools],
-  )
+  const prefectures = useMemo(() => sortPrefectures(pools.map((p) => p.prefecture)), [pools])
   const [indoor, setIndoor] = useState<'any' | 'indoor' | 'outdoor'>('any')
   const [need, setNeed] = useState<Set<FacilityKey>>(new Set())
   const [status, setStatus] = useState<Status>('all')

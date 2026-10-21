@@ -2,7 +2,7 @@ import { ChevronLeft } from 'lucide-react'
 import { useState, type FormEvent } from 'react'
 import { Link } from 'react-router-dom'
 import { AttributesForm } from '../components/AttributesForm'
-import { ErrorNotice, Loading, LoginPrompt } from '../components/common'
+import { ErrorNotice, Loading, LoginPrompt, PageLoading } from '../components/common'
 import { deleteMyAttributes, getMyAttributes, saveMyAttributes, updateProfile } from '../lib/api'
 import { useAuth } from '../lib/auth'
 import { useMyData } from '../lib/mydata'
@@ -14,7 +14,7 @@ export function SettingsPage() {
   const userId = session?.user.id
   const attrs = useAsync(() => (userId ? getMyAttributes() : Promise.resolve(null)), [userId])
 
-  if (loading) return <main className="page"><Loading /></main>
+  if (loading) return <PageLoading />
   if (!session || !userId) {
     return (
       <main className="page">

@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
+import { toError } from './errors'
 
 export type AsyncState<T> = {
   data: T | undefined
@@ -24,7 +25,7 @@ export function useAsync<T>(fn: () => Promise<T>, deps: unknown[]): AsyncState<T
         setError(null)
       })
       .catch((e: unknown) => {
-        if (active) setError(e instanceof Error ? e : new Error(String(e)))
+        if (active) setError(toError(e))
       })
       .finally(() => {
         if (active) setLoading(false)

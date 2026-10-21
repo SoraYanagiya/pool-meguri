@@ -2,6 +2,7 @@ import { LoaderCircle, LogIn } from 'lucide-react'
 import { useState, type ReactNode } from 'react'
 import { useLocation } from 'react-router-dom'
 import { useAuth } from '../lib/auth'
+import { errorMessage } from '../lib/errors'
 import { enabledProviders, isSupabaseConfigured, type OAuthProvider } from '../lib/supabase'
 
 export function Loading({ label = '読み込み中' }: { label?: string }) {
@@ -19,6 +20,24 @@ export function ErrorNotice({ error, children }: { error?: Error | null; childre
       {children ?? '読み込みに失敗しました。通信状況を確認して、ページを再読み込みしてください。'}
       {error && <div className="small muted">{error.message}</div>}
     </div>
+  )
+}
+
+/** ページ全体の読み込み中表示 */
+export function PageLoading() {
+  return (
+    <main className="page">
+      <Loading />
+    </main>
+  )
+}
+
+/** ページ全体の読み込み失敗表示 */
+export function PageError({ error }: { error: Error }) {
+  return (
+    <main className="page">
+      <ErrorNotice error={error} />
+    </main>
   )
 }
 
@@ -51,7 +70,7 @@ export function LoginButtons({ returnTo }: { returnTo?: string }) {
     try {
       await signIn(p, returnTo ?? location.pathname)
     } catch (e) {
-      setError(e instanceof Error ? e.message : String(e))
+      setError(errorMessage(e))
       setBusy(null)
     }
   }

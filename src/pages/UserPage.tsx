@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import { Avatar, ErrorNotice, Loading } from '../components/common'
+import { Avatar, ErrorNotice, Loading, PageError, PageLoading } from '../components/common'
 import { VisitCard } from '../components/VisitCard'
 import { getProfile, listVisitsByUser } from '../lib/api'
 import { useAuth } from '../lib/auth'
@@ -14,8 +14,8 @@ export function UserPage() {
   const publicVisits = visits.data?.filter((v) => v.visibility === 'public')
   const poolCount = new Set(publicVisits?.map((v) => v.pool_id)).size
 
-  if (profile.loading) return <main className="page"><Loading /></main>
-  if (profile.error) return <main className="page"><ErrorNotice error={profile.error} /></main>
+  if (profile.loading) return <PageLoading />
+  if (profile.error) return <PageError error={profile.error} />
   const p = profile.data
   if (!p) return <main className="page"><div className="empty">ユーザーが見つかりません。</div></main>
 

@@ -3,10 +3,11 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { deleteVisit, reportVisit } from '../lib/api'
 import { useAuth } from '../lib/auth'
-import { formatBalance, strokeInfo } from '../lib/calorie'
+import { strokeInfo } from '../lib/calorie'
 import { formatDate } from '../lib/fields'
 import type { VisitWithRelations } from '../lib/types'
 import { Avatar } from './common'
+import { KcalSummary } from './KcalSummary'
 
 type Props = {
   visit: VisitWithRelations
@@ -92,20 +93,7 @@ export function VisitCard({ visit, show, onChanged }: Props) {
         </div>
       )}
       {visit.show_calories && (visit.kcal_burned !== null || visit.kcal_intake !== null) && (
-        <div className="kcal">
-          <div>
-            消費
-            <strong>{visit.kcal_burned?.toLocaleString('ja-JP') ?? '—'}</strong>
-          </div>
-          <div>
-            摂取
-            <strong>{visit.kcal_intake?.toLocaleString('ja-JP') ?? '—'}</strong>
-          </div>
-          <div>
-            収支（目安）
-            <strong>{formatBalance(visit.kcal_burned, visit.kcal_intake)}</strong>
-          </div>
-        </div>
+        <KcalSummary burned={visit.kcal_burned} intake={visit.kcal_intake} />
       )}
       {visit.body ? (
         <p className="prewrap" style={{ margin: 0 }}>

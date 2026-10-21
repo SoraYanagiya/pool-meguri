@@ -1,9 +1,10 @@
 import { Navigate, useNavigate, useSearchParams } from 'react-router-dom'
 import { AttributesForm } from '../components/AttributesForm'
-import { Loading } from '../components/common'
+import { PageLoading } from '../components/common'
 import { markOnboarded, saveMyAttributes } from '../lib/api'
 import { useAuth } from '../lib/auth'
 import { useMyData } from '../lib/mydata'
+import { safeNextPath } from '../lib/paths'
 import type { ProfileAttributes } from '../lib/types'
 
 /** 初回ログイン後に一度だけ表示する任意アンケート */
@@ -12,10 +13,9 @@ export function WelcomePage() {
   const { refresh } = useMyData()
   const navigate = useNavigate()
   const [params] = useSearchParams()
-  const next = params.get('next') ?? '/me'
-  const safeNext = next.startsWith('/') && !next.startsWith('//') ? next : '/me'
+  const safeNext = safeNextPath(params.get('next'))
 
-  if (loading || (session && !profile)) return <main className="page"><Loading /></main>
+  if (loading || (session && !profile)) return <PageLoading />
   if (!session || !profile) return <Navigate to="/login" replace />
 
   const userId = session.user.id

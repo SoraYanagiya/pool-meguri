@@ -4,9 +4,9 @@ import { Link, useParams } from 'react-router-dom'
 import { ErrorNotice, Loading } from '../components/common'
 import { listPoolRevisions, revertPoolRevision } from '../lib/api'
 import { useAuth } from '../lib/auth'
-import { FACILITIES } from '../lib/fields'
+import { FACILITIES, STATUS_LABEL } from '../lib/fields'
 import { useMyData } from '../lib/mydata'
-import type { Pool, PoolRevision } from '../lib/types'
+import type { Pool, PoolRevision, PoolStatus } from '../lib/types'
 import { useAsync } from '../lib/useAsync'
 
 const LABELS: Partial<Record<keyof Pool, string>> = {
@@ -34,9 +34,7 @@ function show(v: unknown): string {
   if (v === null || v === undefined || v === '') return '（空欄）'
   if (v === true) return 'あり／屋内'
   if (v === false) return 'なし／屋外'
-  if (v === 'open') return '営業中'
-  if (v === 'temporarily_closed') return '休館中'
-  if (v === 'closed') return '閉館'
+  if (typeof v === 'string' && Object.hasOwn(STATUS_LABEL, v)) return STATUS_LABEL[v as PoolStatus]
   return String(v)
 }
 
