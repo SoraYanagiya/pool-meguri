@@ -117,9 +117,9 @@ export function MyPage() {
       </section>
 
       {byCity.length > 1 && (
-        <>
-          <h2 className="h-section">市区町村ごと</h2>
-          <div className="panel bars">
+        <details className="panel disclosure">
+          <summary>市区町村ごとに見る</summary>
+          <div className="bars">
             {byCity.map(([city, e]) => (
               <div key={city} className="bar-row">
                 <span>{city}</span>
@@ -132,7 +132,7 @@ export function MyPage() {
               </div>
             ))}
           </div>
-        </>
+        </details>
       )}
 
       {(totals.distance > 0 || totals.hasKcal) && (
