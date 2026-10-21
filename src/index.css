@@ -1,0 +1,791 @@
+@import 'leaflet/dist/leaflet.css';
+
+:root {
+  --water: #1f7fbf;
+  --water-strong: #16659a;
+  --deep: #123a5c;
+  --muted: #557086;
+  --tile: #eaf4f8;
+  --surface: #ffffff;
+  --grout: #c7d7df;
+  --rope: #f2c230;
+  --rope-ink: #5a4400;
+  --danger: #b3261e;
+  --ok: #1d7a4a;
+
+  --font-body: 'Zen Kaku Gothic New', 'Hiragino Sans', 'Noto Sans JP', system-ui, sans-serif;
+  --font-sign: 'Dela Gothic One', 'Zen Kaku Gothic New', sans-serif;
+
+  --r-small: 6px;
+  --r-card: 12px;
+  --gutter: 16px;
+  --nav-h: 64px;
+
+  color-scheme: light;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--deep);
+  background: var(--tile);
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --water: #5bb1e6;
+    --water-strong: #8ccaf0;
+    --deep: #e4eff5;
+    --muted: #9db3c2;
+    --tile: #0e2233;
+    --surface: #15304a;
+    --grout: #24435e;
+    --rope: #f2c230;
+    --rope-ink: #2b2000;
+    --danger: #ff8a80;
+    --ok: #6fd3a0;
+    color-scheme: dark;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--tile);
+}
+
+a {
+  color: var(--water-strong);
+}
+
+img {
+  max-width: 100%;
+}
+
+:focus-visible {
+  outline: 3px solid var(--rope);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* ---- 骨組み --------------------------------------------------------- */
+
+.app {
+  min-height: 100dvh;
+  padding-bottom: calc(var(--nav-h) + env(safe-area-inset-bottom));
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px var(--gutter);
+  background: var(--water);
+  color: #fff;
+}
+
+.topbar-title {
+  margin: 0;
+  font-family: var(--font-sign);
+  font-weight: 400;
+  font-size: 1.25rem;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  color: inherit;
+  text-decoration: none;
+}
+
+.topbar-spacer {
+  flex: 1;
+}
+
+.topbar-login {
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+.page {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--gutter);
+}
+
+.bottomnav {
+  position: fixed;
+  inset: auto 0 0 0;
+  z-index: 1000;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: calc(var(--nav-h) + env(safe-area-inset-bottom));
+  padding-bottom: env(safe-area-inset-bottom);
+  background: var(--surface);
+  border-top: 1px solid var(--grout);
+}
+
+.bottomnav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.bottomnav a.active {
+  color: var(--water-strong);
+  font-weight: 700;
+}
+
+/* ---- 文字 ----------------------------------------------------------- */
+
+h1,
+h2,
+h3 {
+  line-height: 1.35;
+  margin: 0;
+}
+
+.sign {
+  font-family: var(--font-sign);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.h-page {
+  font-size: 1.5rem;
+}
+
+.h-section {
+  font-size: 1.125rem;
+  margin: 28px 0 10px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.small {
+  font-size: 0.875rem;
+}
+
+.prewrap {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* ---- 部品 ----------------------------------------------------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 1.5px solid var(--water);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--water-strong);
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.btn-primary {
+  background: var(--water);
+  color: #fff;
+}
+
+.btn-rope {
+  border-color: var(--rope);
+  background: var(--rope);
+  color: var(--rope-ink);
+}
+
+.btn-quiet {
+  border-color: transparent;
+  background: transparent;
+  color: var(--muted);
+  padding-inline: 8px;
+}
+
+.btn-danger {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.stack {
+  display: grid;
+  gap: 12px;
+}
+
+.panel {
+  background: var(--surface);
+  border-radius: var(--r-card);
+  padding: 16px;
+}
+
+.notice {
+  padding: 12px 14px;
+  border-left: 4px solid var(--water);
+  background: var(--surface);
+  border-radius: var(--r-small);
+}
+
+.notice-error {
+  border-left-color: var(--danger);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--grout);
+  background: var(--surface);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--deep);
+}
+
+.chip-visited {
+  border-color: var(--rope);
+  background: var(--rope);
+  color: var(--rope-ink);
+  font-weight: 700;
+}
+
+button.chip {
+  font: inherit;
+  font-size: 0.8125rem;
+  cursor: pointer;
+  min-height: 32px;
+}
+
+button.chip[aria-pressed='true'] {
+  border-color: var(--water);
+  background: var(--water);
+  color: #fff;
+}
+
+/* ---- フォーム ------------------------------------------------------- */
+
+.field {
+  display: grid;
+  gap: 4px;
+}
+
+.field > span {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.field small {
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+
+input[type='text'],
+input[type='url'],
+input[type='number'],
+input[type='date'],
+textarea,
+select {
+  width: 100%;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1.5px solid var(--grout);
+  border-radius: var(--r-small);
+  background: var(--surface);
+  color: var(--deep);
+  font: inherit;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--water);
+  outline: none;
+}
+
+.segmented {
+  display: inline-grid;
+  grid-auto-flow: column;
+  border: 1.5px solid var(--water);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.segmented button {
+  min-height: 40px;
+  padding: 4px 14px;
+  border: 0;
+  background: var(--surface);
+  color: var(--water-strong);
+  font: inherit;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.segmented button[aria-pressed='true'] {
+  background: var(--water);
+  color: #fff;
+  font-weight: 700;
+}
+
+/* ---- タイル壁（制覇状況） ------------------------------------------ */
+
+.tilewall {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(34px, 1fr));
+  gap: 3px;
+  padding: 3px;
+  background: var(--grout);
+  border-radius: var(--r-small);
+}
+
+.tile {
+  aspect-ratio: 1;
+  display: block;
+  border-radius: 2px;
+  background: var(--surface);
+}
+
+.tile-visited {
+  background: var(--rope);
+}
+
+.tile-wish {
+  box-shadow: inset 0 0 0 3px var(--water);
+}
+
+.tile-new {
+  animation: tile-in 600ms ease-out both;
+}
+
+@keyframes tile-in {
+  from {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+}
+
+.score {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 4px 0 12px;
+}
+
+.score-num {
+  font-family: var(--font-sign);
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.score-den {
+  font-family: var(--font-sign);
+  font-size: 1.25rem;
+  color: var(--muted);
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 8px;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.legend i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+  vertical-align: -1px;
+  border-radius: 2px;
+  background: var(--surface);
+  border: 1px solid var(--grout);
+}
+
+.legend i.v {
+  background: var(--rope);
+  border-color: var(--rope);
+}
+
+.legend i.w {
+  box-shadow: inset 0 0 0 2px var(--water);
+}
+
+.bars {
+  display: grid;
+  gap: 8px;
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 7em 1fr 3.5em;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+}
+
+.bar {
+  height: 10px;
+  border-radius: 999px;
+  background: var(--grout);
+  overflow: hidden;
+}
+
+.bar > span {
+  display: block;
+  height: 100%;
+  background: var(--rope);
+}
+
+/* ---- 施設一覧 ------------------------------------------------------- */
+
+.pool-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1px;
+  background: var(--grout);
+  border-radius: var(--r-card);
+  overflow: hidden;
+}
+
+.pool-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 12px;
+  padding: 12px 14px;
+  background: var(--surface);
+  color: inherit;
+  text-decoration: none;
+}
+
+.pool-item-name {
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.pool-item-meta {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.fare {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* ---- 地図 ----------------------------------------------------------- */
+
+.map {
+  height: min(58dvh, 520px);
+  border-radius: var(--r-card);
+  overflow: hidden;
+  z-index: 0;
+}
+
+.marker {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 2px solid #fff;
+  background: var(--water);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.35);
+}
+
+.marker-visited {
+  background: var(--rope);
+}
+
+.marker-out {
+  background: #8fa3b1;
+}
+
+.map-wrap {
+  position: relative;
+}
+
+.map-locate {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  padding: 8px;
+  background: var(--surface);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.3);
+}
+
+/* 現在地。施設の四角いマーカーと見分けられるよう丸で示す */
+.here-dot {
+  fill: var(--water-strong);
+  fill-opacity: 1;
+  stroke: #fff;
+  stroke-width: 3;
+}
+
+.here-accuracy {
+  fill: var(--water);
+  fill-opacity: 0.12;
+  stroke: var(--water);
+  stroke-opacity: 0.4;
+  stroke-width: 1;
+}
+
+/* ---- 施設詳細 ------------------------------------------------------- */
+
+.pool-hero {
+  padding: 18px 16px 16px;
+  border-radius: var(--r-card);
+  background: var(--water);
+  color: #fff;
+  /* コースロープ */
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent 0 22px,
+    rgb(255 255 255 / 0.22) 22px 30px
+  );
+  background-size: 100% 6px;
+  background-repeat: no-repeat;
+  background-position: bottom 14px left;
+}
+
+.pool-hero h1 {
+  font-family: var(--font-sign);
+  font-weight: 400;
+  font-size: 1.625rem;
+  letter-spacing: 0.02em;
+}
+
+.pool-hero .chip {
+  border-color: rgb(255 255 255 / 0.6);
+  background: transparent;
+  color: #fff;
+}
+
+.pool-hero .chip-visited {
+  border-color: var(--rope);
+  background: var(--rope);
+  color: var(--rope-ink);
+}
+
+.pool-hero-body {
+  padding-bottom: 22px;
+  display: grid;
+  gap: 8px;
+}
+
+.facilities {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 8px;
+}
+
+.facility {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: var(--r-small);
+  background: var(--surface);
+  font-size: 0.875rem;
+}
+
+.facility-yes {
+  box-shadow: inset 4px 0 0 var(--water);
+  font-weight: 700;
+}
+
+.facility-no {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.facility-unknown {
+  color: var(--muted);
+}
+
+.info {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 6.5em 1fr;
+  gap: 10px 12px;
+  font-size: 0.9375rem;
+}
+
+.info dt {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.info dd {
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* ---- めぐり記録 ----------------------------------------------------- */
+
+.visit {
+  display: grid;
+  gap: 6px;
+  padding: 14px 16px;
+  border-radius: var(--r-card);
+  background: var(--surface);
+}
+
+.visit-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.875rem;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--grout);
+  flex: none;
+}
+
+.avatar-lg {
+  width: 64px;
+  height: 64px;
+}
+
+.empty {
+  padding: 24px 16px;
+  text-align: center;
+  color: var(--muted);
+  background: var(--surface);
+  border-radius: var(--r-card);
+}
+
+.diff {
+  display: grid;
+  gap: 4px;
+  font-size: 0.8125rem;
+}
+
+.diff del {
+  color: var(--danger);
+}
+
+.diff ins {
+  color: var(--ok);
+  text-decoration: none;
+}
+
+.spin {
+  animation: spin 900ms linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.chip-closed {
+  border-color: var(--muted);
+  color: var(--muted);
+}
+
+.kcal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  border-radius: var(--r-small);
+  overflow: hidden;
+  background: var(--grout);
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.kcal > div {
+  padding: 6px 4px;
+  background: var(--tile);
+}
+
+.kcal strong {
+  display: block;
+  font-size: 1rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.appearance {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+  padding: 10px 12px;
+  border-radius: var(--r-small);
+  background: var(--surface);
+  box-shadow: inset 4px 0 0 var(--rope);
+}
+
+.appearance-ep {
+  font-family: var(--font-sign);
+  letter-spacing: 0.02em;
+}
