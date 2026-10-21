@@ -24,6 +24,8 @@ export function SearchPage() {
   const [pref, setPref] = useState('')
   const [onlyAppeared, setOnlyAppeared] = useState(false)
   const [hideClosed, setHideClosed] = useState(true)
+  // 学校開放は利用時間が限られるため、既定では一覧に出さない
+  const [hideSchool, setHideSchool] = useState(true)
 
   const prefectures = useMemo(() => sortPrefectures(pools.map((p) => p.prefecture)), [pools])
   const [indoor, setIndoor] = useState<'any' | 'indoor' | 'outdoor'>('any')
@@ -35,6 +37,7 @@ export function SearchPage() {
     return pools.filter((p) => {
       if (pref && p.prefecture !== pref) return false
       if (hideClosed && p.status === 'closed') return false
+      if (hideSchool && p.kind === 'school') return false
       if (onlyAppeared && !appeared.data?.has(p.id)) return false
       if (indoor === 'indoor' && p.is_indoor !== true) return false
       if (indoor === 'outdoor' && p.is_indoor !== false) return false
@@ -48,7 +51,7 @@ export function SearchPage() {
       }
       return true
     })
-  }, [pools, q, pref, hideClosed, onlyAppeared, appeared.data, indoor, need, status, visited, wishes])
+  }, [pools, q, pref, hideClosed, hideSchool, onlyAppeared, appeared.data, indoor, need, status, visited, wishes])
 
   function toggleNeed(k: FacilityKey) {
     setNeed((prev) => {
@@ -99,6 +102,9 @@ export function SearchPage() {
         </button>
         <button type="button" className="chip" aria-pressed={hideClosed} onClick={() => setHideClosed((v) => !v)}>
           閉館を除く
+        </button>
+        <button type="button" className="chip" aria-pressed={hideSchool} onClick={() => setHideSchool((v) => !v)}>
+          学校開放を除く
         </button>
         <button
           type="button"

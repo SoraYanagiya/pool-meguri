@@ -18,7 +18,7 @@ export function MyPage() {
   const userId = session?.user.id
   const myVisits = useAsync(() => (userId ? listVisitsByUser(userId) : Promise.resolve([])), [userId])
 
-  // 制覇の母数: 選んだ都道府県の、閉館していない施設
+  // 制覇の母数: 選んだ都道府県の、閉館していない市民プール（学校開放は含めない）
   const target = useMemo(
     () => pools.filter((p) => p.prefecture === area && countsForCompletion(p)),
     [pools, area],
@@ -112,7 +112,7 @@ export function MyPage() {
           </>
         )}
         <p className="small muted" style={{ margin: '8px 0 0' }}>
-          全国で{visited.size}施設、{visitedPrefectures.size}都道府県に行きました。閉館した施設は数に含めていません。
+          全国で{visited.size}施設、{visitedPrefectures.size}都道府県に行きました。閉館した施設と学校開放のプールは、制覇の数に含めていません。
         </p>
       </section>
 

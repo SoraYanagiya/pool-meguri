@@ -22,7 +22,7 @@ const files = readdirSync(join(root, 'data'))
 if (files.length === 0) throw new Error('対象のデータファイルがありません')
 
 const POOL_COLUMNS = [
-  'id', 'name', 'prefecture', 'municipality', 'status', 'address', 'lat', 'lng', 'official_url',
+  'id', 'name', 'prefecture', 'municipality', 'kind', 'status', 'address', 'lat', 'lng', 'official_url',
   'is_indoor', 'season_note', 'opening_hours', 'closed_days', 'fee_note',
   'has_25m', 'has_50m', 'has_kids_pool', 'has_diving_pool', 'has_water_slide', 'has_restaurant', 'has_parking',
   'access_note', 'note', 'source_url', 'verified_on',
@@ -60,7 +60,10 @@ for (const file of files) {
     const nameKey = `${p.prefecture}|${p.municipality}|${p.name}`
     if (nameKeys.has(nameKey)) throw new Error(`施設名が重複しています: ${nameKey}`)
     nameKeys.add(nameKey)
-    const row = { status: 'open', verified_on: data.verified_on, ...p }
+    if (p.kind !== undefined && !['public', 'school'].includes(p.kind)) {
+      throw new Error(`${file}: ${p.name}: kind が不正です: ${p.kind}`)
+    }
+    const row = { kind: 'public', status: 'open', verified_on: data.verified_on, ...p }
     poolRows.push(
       `(${POOL_COLUMNS.map((c) => {
         const v = row[c]

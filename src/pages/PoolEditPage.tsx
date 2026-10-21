@@ -4,14 +4,15 @@ import { ErrorNotice, LoginPrompt, PageError, PageLoading } from '../components/
 import { createPool, getPool, updatePool } from '../lib/api'
 import { useAuth } from '../lib/auth'
 import { errorMessage, toError } from '../lib/errors'
-import { FACILITIES, PREFECTURES, STATUS_LABEL, type FacilityKey } from '../lib/fields'
+import { FACILITIES, KIND_LABEL, PREFECTURES, STATUS_LABEL, type FacilityKey } from '../lib/fields'
 import { useMyData } from '../lib/mydata'
-import type { Pool, PoolInput, PoolStatus } from '../lib/types'
+import type { Pool, PoolInput, PoolKind, PoolStatus } from '../lib/types'
 
 const EMPTY: PoolInput = {
   name: '',
   prefecture: '',
   municipality: '',
+  kind: 'public',
   status: 'open',
   address: '',
   lat: null,
@@ -177,6 +178,15 @@ export function PoolEditPage() {
         </Field>
         <Field label="市区町村（必須）" hint="施設の所在地。例: 調布市、世田谷区">
           <input type="text" required maxLength={30} {...text('municipality')} />
+        </Field>
+        <Field label="種別" hint="学校開放: 小中学校などのプールを決まった曜日・時間帯だけ一般開放しているもの">
+          <select value={form.kind} onChange={(e) => set('kind', e.target.value as PoolKind)}>
+            {(Object.keys(KIND_LABEL) as PoolKind[]).map((k) => (
+              <option key={k} value={k}>
+                {KIND_LABEL[k]}
+              </option>
+            ))}
+          </select>
         </Field>
         <Field label="営業状況">
           <select value={form.status} onChange={(e) => set('status', e.target.value as PoolStatus)}>
