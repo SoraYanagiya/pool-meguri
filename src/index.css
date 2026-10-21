@@ -378,9 +378,9 @@ select:focus {
 
 .tilewall {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(34px, 1fr));
-  gap: 3px;
-  padding: 3px;
+  grid-template-columns: repeat(auto-fill, minmax(18px, 1fr));
+  gap: 2px;
+  padding: 2px;
   background: var(--grout);
   border-radius: var(--r-small);
 }
@@ -397,7 +397,7 @@ select:focus {
 }
 
 .tile-wish {
-  box-shadow: inset 0 0 0 3px var(--water);
+  box-shadow: inset 0 0 0 2px var(--water);
 }
 
 .tile-new {
