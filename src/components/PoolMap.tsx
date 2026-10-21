@@ -1,6 +1,6 @@
 import L from 'leaflet'
 import { LoaderCircle, LocateFixed } from 'lucide-react'
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Circle, CircleMarker, MapContainer, Marker, Popup, TileLayer, Tooltip } from 'react-leaflet'
 import { Link } from 'react-router-dom'
 import type { Pool } from '../lib/types'
@@ -29,9 +29,11 @@ type Here = { lat: number; lng: number; accuracy: number }
 type Props = {
   pools: Pool[]
   isVisited: (id: string) => boolean
+  /** この値が変わったときだけ、表示中の施設が収まる範囲に地図を合わせる */
+  fitKey?: string
 }
 
-export function PoolMap({ pools, isVisited }: Props) {
+export function PoolMap({ pools, isVisited, fitKey }: Props) {
   const mapRef = useRef<L.Map | null>(null)
   const [here, setHere] = useState<Here | null>(null)
   const [locating, setLocating] = useState(canLocate)
@@ -72,19 +74,32 @@ export function PoolMap({ pools, isVisited }: Props) {
     requestHere(false)
   }
 
-  const located = pools.filter((p) => p.lat !== null && p.lng !== null)
-  const bounds =
-    located.length > 1
-      ? L.latLngBounds(located.map((p) => [p.lat as number, p.lng as number] as [number, number])).pad(0.1)
-      : undefined
+  const located = useMemo(() => pools.filter((p) => p.lat !== null && p.lng !== null), [pools])
+  const bounds = useMemo(
+    () =>
+      located.length > 1
+        ? L.latLngBounds(located.map((p) => [p.lat as number, p.lng as number] as [number, number])).pad(0.1)
+        : undefined,
+    [located],
+  )
   const center: [number, number] =
     located.length === 1 ? [located[0].lat as number, located[0].lng as number] : FALLBACK
+
+  const fittedKey = useRef(fitKey)
+  useEffect(() => {
+    if (fittedKey.current === fitKey) return
+    fittedKey.current = fitKey
+    const map = mapRef.current
+    if (!map || located.length === 0) return
+    if (bounds) map.fitBounds(bounds)
+    else map.setView([located[0].lat as number, located[0].lng as number], HERE_ZOOM)
+  }, [fitKey, located, bounds])
   return (
     <div className="stack">
       <div className="map-wrap">
+        {/* center と bounds は初回のみ使われる。絞り込みを変えても表示位置は保つ */}
         <MapContainer
           ref={mapRef}
-          key={located.map((p) => p.id).join(',')}
           center={center}
           zoom={13}
           bounds={bounds}

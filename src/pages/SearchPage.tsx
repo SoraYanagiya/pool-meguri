@@ -168,7 +168,7 @@ export function SearchPage() {
       {poolsError && <ErrorNotice error={poolsError} />}
 
       {!poolsLoading && !poolsError && view === 'map' && (
-        <PoolMap pools={filtered} isVisited={(id) => visited.has(id)} />
+        <PoolMap pools={filtered} isVisited={(id) => visited.has(id)} fitKey={pref} />
       )}
 
       {!poolsLoading && !poolsError && view === 'list' && (
