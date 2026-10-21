@@ -19,7 +19,7 @@ export function SearchPage() {
   const { session } = useAuth()
   const { pools, poolsLoading, poolsError, visited, wishes } = useMyData()
   const appeared = useAsync(() => listAppearedPoolIds(), [])
-  const [view, setView] = useState<View>('list')
+  const [view, setView] = useState<View>('map')
   const [q, setQ] = useState('')
   const [pref, setPref] = useState('')
   const [onlyAppeared, setOnlyAppeared] = useState(false)
@@ -149,11 +149,11 @@ export function SearchPage() {
       <div className="row" style={{ justifyContent: 'space-between' }}>
         <span className="muted small">{filtered.length}施設</span>
         <div className="segmented" role="group" aria-label="表示の切り替え">
-          <button type="button" aria-pressed={view === 'list'} onClick={() => setView('list')}>
-            <List size={16} aria-hidden /> 一覧
-          </button>
           <button type="button" aria-pressed={view === 'map'} onClick={() => setView('map')}>
             <MapIcon size={16} aria-hidden /> 地図
+          </button>
+          <button type="button" aria-pressed={view === 'list'} onClick={() => setView('list')}>
+            <List size={16} aria-hidden /> 一覧
           </button>
         </div>
       </div>
