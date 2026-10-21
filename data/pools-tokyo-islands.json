@@ -1,0 +1,33 @@
+{
+  "_comment": "東京都島しょ部（町村立）の公営プール。2026-10-21に確認。番地が確認できない施設は座標を付けていない。",
+  "verified_on": "2026-10-21",
+  "pools": [
+    {
+      "id": "721dc7f3-4d9f-4a60-86d9-a0eb13b105b5",
+      "name": "弘法浜サンセットプール",
+      "prefecture": "東京都",
+      "municipality": "大島町",
+      "status": "open",
+      "address": "東京都大島町元町（弘法浜）",
+      "official_url": "https://www.town.oshima.tokyo.jp/soshiki/kankou/koubouhamapool.html",
+      "is_indoor": false,
+      "has_water_slide": true,
+      "season_note": "夏季のみ",
+      "note": "町営。弘法浜遊泳場に併設。流れるプールとスライダーあり。例年7月中旬〜8月下旬に開設。番地は未確認のため地図には表示しない。",
+      "source_url": "https://rurubu.jp/andmore/spot/80012738"
+    },
+    {
+      "id": "4dbfd8d2-d8a7-4b5f-89bd-f6e00ebdc71e",
+      "name": "差木地プール",
+      "prefecture": "東京都",
+      "municipality": "大島町",
+      "status": "open",
+      "address": "東京都大島町差木地",
+      "official_url": "https://www.town.oshima.tokyo.jp/soshiki/kankou/koubouhamapool.html",
+      "is_indoor": false,
+      "season_note": "夏季のみ",
+      "note": "町営の夏季プール。設備と番地は未確認のため地図には表示しない。",
+      "source_url": "https://www.town.oshima.tokyo.jp/soshiki/kankou/koubouhamapool.html"
+    }
+  ]
+}
