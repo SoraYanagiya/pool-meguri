@@ -4,6 +4,7 @@ import { Link, useParams } from 'react-router-dom'
 import { AppearanceSection } from '../components/AppearanceSection'
 import { ErrorNotice, Loading, LoginPrompt, PageError, PageLoading } from '../components/common'
 import { FacilityGrid } from '../components/FacilityGrid'
+import { PoolSpotMap } from '../components/PoolSpotMap'
 import { VisitCard } from '../components/VisitCard'
 import { getPool, listVisitsForPool } from '../lib/api'
 import { useAuth } from '../lib/auth'
@@ -101,6 +102,7 @@ export function PoolDetailPage() {
 
       <h2 className="h-section">基本情報</h2>
       <div className="panel">
+        <PoolSpotMap pool={p} visited={Boolean(v)} />
         <dl className="info">
           <dt>住所</dt>
           <dd>{p.address || '未登録'}</dd>
