@@ -8,7 +8,7 @@ import {
   ArrowDownToLine,
   type LucideIcon,
 } from 'lucide-react'
-import type { AgeGroup, Gender, Pool, PoolStatus } from './types'
+import type { AgeGroup, Gender, Pool, PoolKind, PoolStatus } from './types'
 
 export type FacilityKey =
   | 'has_25m'
@@ -47,9 +47,14 @@ export const STATUS_LABEL: Record<PoolStatus, string> = {
   closed: '閉館',
 }
 
-/** 制覇の母数に含めるか（閉館した施設は含めない） */
-export function countsForCompletion(p: Pick<Pool, 'status'>): boolean {
-  return p.status !== 'closed'
+export const KIND_LABEL: Record<PoolKind, string> = {
+  public: '市民プール',
+  school: '学校開放',
+}
+
+/** 制覇の母数に含めるか（閉館した施設と学校開放は含めない） */
+export function countsForCompletion(p: Pick<Pool, 'status' | 'kind'>): boolean {
+  return p.status !== 'closed' && p.kind !== 'school'
 }
 
 export const PREFECTURES = [

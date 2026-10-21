@@ -1,6 +1,6 @@
 import { Check, Heart } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { STATUS_LABEL, indoorLabel } from '../lib/fields'
+import { KIND_LABEL, STATUS_LABEL, indoorLabel } from '../lib/fields'
 import type { Pool } from '../lib/types'
 
 type Props = {
@@ -35,6 +35,7 @@ export function PoolListItem({ pool, visited, wished }: Props) {
             </span>
           )}
           {pool.status !== 'open' && <span className="chip chip-closed">{STATUS_LABEL[pool.status]}</span>}
+          {pool.kind === 'school' && <span className="chip">{KIND_LABEL.school}</span>}
           <span className="chip">{indoorLabel(pool)}</span>
           {lanes && <span className="chip">{lanes}</span>}
         </span>

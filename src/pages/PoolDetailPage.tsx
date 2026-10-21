@@ -8,7 +8,7 @@ import { VisitCard } from '../components/VisitCard'
 import { getPool, listVisitsForPool } from '../lib/api'
 import { useAuth } from '../lib/auth'
 import { errorMessage } from '../lib/errors'
-import { STATUS_LABEL, formatDate, indoorLabel } from '../lib/fields'
+import { KIND_LABEL, STATUS_LABEL, formatDate, indoorLabel } from '../lib/fields'
 import { useMyData } from '../lib/mydata'
 import { useAsync } from '../lib/useAsync'
 
@@ -54,6 +54,7 @@ export function PoolDetailPage() {
             </span>
             <span className="chip">{indoorLabel(p)}</span>
             {p.status !== 'open' && <span className="chip">{STATUS_LABEL[p.status]}</span>}
+            {p.kind === 'school' && <span className="chip">{KIND_LABEL.school}</span>}
             {v && (
               <span className="chip chip-visited">
                 <Check size={14} aria-hidden />
@@ -83,6 +84,11 @@ export function PoolDetailPage() {
 
       {p.status === 'closed' && (
         <div className="notice">この施設は閉館しています。行った記録は残せますが、制覇の数には含まれません。</div>
+      )}
+      {p.kind === 'school' && (
+        <div className="notice">
+          学校施設の一般開放です。利用できる曜日・時間帯が限られるため、公式情報を確認してください。行った記録は残せますが、制覇の数には含まれません。
+        </div>
       )}
       {p.status === 'temporarily_closed' && (
         <div className="notice">この施設は休館中です。再開時期は公式サイトで確認してください。</div>

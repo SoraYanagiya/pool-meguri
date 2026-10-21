@@ -4,15 +4,16 @@ import { Link, useParams } from 'react-router-dom'
 import { ErrorNotice, Loading } from '../components/common'
 import { listPoolRevisions, revertPoolRevision } from '../lib/api'
 import { useAuth } from '../lib/auth'
-import { FACILITIES, STATUS_LABEL } from '../lib/fields'
+import { FACILITIES, KIND_LABEL, STATUS_LABEL } from '../lib/fields'
 import { useMyData } from '../lib/mydata'
-import type { Pool, PoolRevision, PoolStatus } from '../lib/types'
+import type { Pool, PoolKind, PoolRevision, PoolStatus } from '../lib/types'
 import { useAsync } from '../lib/useAsync'
 
 const LABELS: Partial<Record<keyof Pool, string>> = {
   name: '施設名',
   prefecture: '都道府県',
   municipality: '市区町村',
+  kind: '種別',
   status: '営業状況',
   address: '住所',
   lat: '緯度',
@@ -35,6 +36,7 @@ function show(v: unknown): string {
   if (v === true) return 'あり／屋内'
   if (v === false) return 'なし／屋外'
   if (typeof v === 'string' && Object.hasOwn(STATUS_LABEL, v)) return STATUS_LABEL[v as PoolStatus]
+  if (typeof v === 'string' && Object.hasOwn(KIND_LABEL, v)) return KIND_LABEL[v as PoolKind]
   return String(v)
 }
 

@@ -1,5 +1,7 @@
 export type Visibility = 'public' | 'private'
 export type PoolStatus = 'open' | 'temporarily_closed' | 'closed'
+/** public: 市民プールなどの公共プール / school: 学校施設の一般開放 */
+export type PoolKind = 'public' | 'school'
 export type Stroke = 'crawl' | 'crawl_fast' | 'breast' | 'back' | 'leisurely' | 'water_walk' | 'aquabics'
 
 export type Meal = { name: string; kcal: number }
@@ -9,6 +11,7 @@ export type Pool = {
   name: string
   prefecture: string
   municipality: string
+  kind: PoolKind
   status: PoolStatus
   address: string
   lat: number | null

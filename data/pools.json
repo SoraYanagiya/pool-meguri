@@ -29,6 +29,7 @@
       "name": "調和小学校屋内プール",
       "prefecture": "東京都",
       "municipality": "調布市",
+      "kind": "school",
       "status": "open",
       "address": "東京都調布市西つつじヶ丘4-22-6",
       "lat": 35.651386,
@@ -349,23 +350,132 @@
     }
   ],
   "appearances": [
-    { "pool_id": "ce7e32c6-bb95-42c1-8180-ffb10e3020f1", "season": 1, "episode": 1, "note": "両国屋内プール ～ハワイとソースの香り～", "source_url": "https://tv.apple.com/jp/show/x/umc.cmc.29rb95madimw7bd0t967oeg61" },
-    { "pool_id": "bf48272c-bdd9-41d8-842c-8a0cc1a853c3", "season": 1, "episode": 2, "note": "スイムスポーツセンター ～竹ノ塚のアリエルと羽交い絞め事件～", "source_url": "https://tv.apple.com/jp/show/x/umc.cmc.29rb95madimw7bd0t967oeg61" },
-    { "pool_id": "71c3c68f-2c2e-42fa-bbab-489686f65b6e", "season": 1, "episode": 3, "note": "町田市立室内プール ～遊泳のちプルめし時々ピンク～", "source_url": "https://tv.apple.com/jp/show/x/umc.cmc.29rb95madimw7bd0t967oeg61" },
-    { "pool_id": "adb7e6ee-07ee-4c20-88fa-ff361e2fe1e9", "season": 1, "episode": 4, "note": "引地台温水プール ～マダムと流水プールに身を委ね～", "source_url": "https://tv.apple.com/jp/show/x/umc.cmc.29rb95madimw7bd0t967oeg61" },
-    { "pool_id": "eaba8bb1-ba14-4bf7-8c2c-3883ef7e9895", "season": 1, "episode": 5, "note": "国分寺市民室内プール ～津軽海峡とデンタルマジシャン～", "source_url": "https://tv.apple.com/jp/show/x/umc.cmc.29rb95madimw7bd0t967oeg61" },
-    { "pool_id": "eacb7e40-bba5-4b7f-9f50-5fecb95e990b", "season": 1, "episode": 6, "note": "池袋スポーツセンター ～埼玉BOYとサウナに癒やされ～", "source_url": "https://tv.apple.com/jp/show/x/umc.cmc.29rb95madimw7bd0t967oeg61" },
-    { "pool_id": "d31c4450-d6cc-4267-9502-82e720e158f7", "season": 3, "episode": 1, "note": "", "source_url": "https://www.meitelenext.com/variety/akiyama_pool3" },
-    { "pool_id": "d31c4450-d6cc-4267-9502-82e720e158f7", "season": 3, "episode": 2, "note": "前回に続きサンアール朝日", "source_url": "https://www.meitelenext.com/variety/akiyama_pool3" },
-    { "pool_id": "8dc9951b-cb92-4499-9f61-145197602bcd", "season": 3, "episode": 3, "note": "", "source_url": "https://www.meitelenext.com/variety/akiyama_pool3" },
-    { "pool_id": "8dc9951b-cb92-4499-9f61-145197602bcd", "season": 3, "episode": 4, "note": "前回に続き稲毛海浜公園プール", "source_url": "https://www.meitelenext.com/variety/akiyama_pool3" },
-    { "pool_id": "b4819211-b257-4e0f-b4f4-51437f70cc54", "season": 3, "episode": 5, "note": "埼玉県白岡市のB&G海洋センター", "source_url": "https://www.meitelenext.com/variety/akiyama_pool3" },
-    { "pool_id": "7c484e81-7300-46c6-8abb-9a6643b61a8b", "season": 3, "episode": 7, "note": "", "source_url": "https://www.meitelenext.com/variety/akiyama_pool3" },
-    { "pool_id": "7c484e81-7300-46c6-8abb-9a6643b61a8b", "season": 3, "episode": 8, "note": "後編", "source_url": "https://www.meitelenext.com/variety/akiyama_pool3" },
-    { "pool_id": "354746da-148f-40f8-868a-5d854d9e8b72", "season": 3, "episode": 9, "note": "", "source_url": "https://www.meitelenext.com/variety/akiyama_pool3" },
-    { "pool_id": "354746da-148f-40f8-868a-5d854d9e8b72", "season": 3, "episode": 10, "note": "後編", "source_url": "https://www.meitelenext.com/variety/akiyama_pool3" },
-    { "pool_id": "42e7b3c7-7acb-42eb-a972-ca448e8a09d9", "season": 3, "episode": 11, "note": "", "source_url": "https://www.meitelenext.com/variety/akiyama_pool3" },
-    { "pool_id": "42e7b3c7-7acb-42eb-a972-ca448e8a09d9", "season": 3, "episode": 12, "note": "SEASON3最終回（豊田市のプール）", "source_url": "https://www.meitelenext.com/variety/akiyama_pool3" },
-    { "pool_id": "0a7694d3-c592-4ca9-bfe7-d550607765d9", "season": 4, "episode": 1, "aired_on": "2026-10-06", "note": "メ〜テレでの放送日", "source_url": "https://prtimes.jp/main/html/rd/p/000001590.000014977.html" }
+    {
+      "pool_id": "ce7e32c6-bb95-42c1-8180-ffb10e3020f1",
+      "season": 1,
+      "episode": 1,
+      "note": "両国屋内プール ～ハワイとソースの香り～",
+      "source_url": "https://tv.apple.com/jp/show/x/umc.cmc.29rb95madimw7bd0t967oeg61"
+    },
+    {
+      "pool_id": "bf48272c-bdd9-41d8-842c-8a0cc1a853c3",
+      "season": 1,
+      "episode": 2,
+      "note": "スイムスポーツセンター ～竹ノ塚のアリエルと羽交い絞め事件～",
+      "source_url": "https://tv.apple.com/jp/show/x/umc.cmc.29rb95madimw7bd0t967oeg61"
+    },
+    {
+      "pool_id": "71c3c68f-2c2e-42fa-bbab-489686f65b6e",
+      "season": 1,
+      "episode": 3,
+      "note": "町田市立室内プール ～遊泳のちプルめし時々ピンク～",
+      "source_url": "https://tv.apple.com/jp/show/x/umc.cmc.29rb95madimw7bd0t967oeg61"
+    },
+    {
+      "pool_id": "adb7e6ee-07ee-4c20-88fa-ff361e2fe1e9",
+      "season": 1,
+      "episode": 4,
+      "note": "引地台温水プール ～マダムと流水プールに身を委ね～",
+      "source_url": "https://tv.apple.com/jp/show/x/umc.cmc.29rb95madimw7bd0t967oeg61"
+    },
+    {
+      "pool_id": "eaba8bb1-ba14-4bf7-8c2c-3883ef7e9895",
+      "season": 1,
+      "episode": 5,
+      "note": "国分寺市民室内プール ～津軽海峡とデンタルマジシャン～",
+      "source_url": "https://tv.apple.com/jp/show/x/umc.cmc.29rb95madimw7bd0t967oeg61"
+    },
+    {
+      "pool_id": "eacb7e40-bba5-4b7f-9f50-5fecb95e990b",
+      "season": 1,
+      "episode": 6,
+      "note": "池袋スポーツセンター ～埼玉BOYとサウナに癒やされ～",
+      "source_url": "https://tv.apple.com/jp/show/x/umc.cmc.29rb95madimw7bd0t967oeg61"
+    },
+    {
+      "pool_id": "d31c4450-d6cc-4267-9502-82e720e158f7",
+      "season": 3,
+      "episode": 1,
+      "note": "",
+      "source_url": "https://www.meitelenext.com/variety/akiyama_pool3"
+    },
+    {
+      "pool_id": "d31c4450-d6cc-4267-9502-82e720e158f7",
+      "season": 3,
+      "episode": 2,
+      "note": "前回に続きサンアール朝日",
+      "source_url": "https://www.meitelenext.com/variety/akiyama_pool3"
+    },
+    {
+      "pool_id": "8dc9951b-cb92-4499-9f61-145197602bcd",
+      "season": 3,
+      "episode": 3,
+      "note": "",
+      "source_url": "https://www.meitelenext.com/variety/akiyama_pool3"
+    },
+    {
+      "pool_id": "8dc9951b-cb92-4499-9f61-145197602bcd",
+      "season": 3,
+      "episode": 4,
+      "note": "前回に続き稲毛海浜公園プール",
+      "source_url": "https://www.meitelenext.com/variety/akiyama_pool3"
+    },
+    {
+      "pool_id": "b4819211-b257-4e0f-b4f4-51437f70cc54",
+      "season": 3,
+      "episode": 5,
+      "note": "埼玉県白岡市のB&G海洋センター",
+      "source_url": "https://www.meitelenext.com/variety/akiyama_pool3"
+    },
+    {
+      "pool_id": "7c484e81-7300-46c6-8abb-9a6643b61a8b",
+      "season": 3,
+      "episode": 7,
+      "note": "",
+      "source_url": "https://www.meitelenext.com/variety/akiyama_pool3"
+    },
+    {
+      "pool_id": "7c484e81-7300-46c6-8abb-9a6643b61a8b",
+      "season": 3,
+      "episode": 8,
+      "note": "後編",
+      "source_url": "https://www.meitelenext.com/variety/akiyama_pool3"
+    },
+    {
+      "pool_id": "354746da-148f-40f8-868a-5d854d9e8b72",
+      "season": 3,
+      "episode": 9,
+      "note": "",
+      "source_url": "https://www.meitelenext.com/variety/akiyama_pool3"
+    },
+    {
+      "pool_id": "354746da-148f-40f8-868a-5d854d9e8b72",
+      "season": 3,
+      "episode": 10,
+      "note": "後編",
+      "source_url": "https://www.meitelenext.com/variety/akiyama_pool3"
+    },
+    {
+      "pool_id": "42e7b3c7-7acb-42eb-a972-ca448e8a09d9",
+      "season": 3,
+      "episode": 11,
+      "note": "",
+      "source_url": "https://www.meitelenext.com/variety/akiyama_pool3"
+    },
+    {
+      "pool_id": "42e7b3c7-7acb-42eb-a972-ca448e8a09d9",
+      "season": 3,
+      "episode": 12,
+      "note": "SEASON3最終回（豊田市のプール）",
+      "source_url": "https://www.meitelenext.com/variety/akiyama_pool3"
+    },
+    {
+      "pool_id": "0a7694d3-c592-4ca9-bfe7-d550607765d9",
+      "season": 4,
+      "episode": 1,
+      "aired_on": "2026-10-06",
+      "note": "メ〜テレでの放送日",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000001590.000014977.html"
+    }
   ]
 }
