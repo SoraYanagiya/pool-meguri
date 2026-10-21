@@ -1,5 +1,5 @@
 import { ExternalLink, Pencil, Plus, Trash2, Tv } from 'lucide-react'
-import { useState, type FormEvent } from 'react'
+import { Fragment, useState, type FormEvent } from 'react'
 import { deleteAppearance, listAppearances, saveAppearance } from '../lib/api'
 import { useAuth } from '../lib/auth'
 import { errorMessage } from '../lib/errors'
@@ -9,6 +9,14 @@ import { useAsync } from '../lib/useAsync'
 import { ErrorNotice } from './common'
 
 const DEFAULT_PROGRAM = 'ロバート秋山の市民プール万歳'
+
+/** DEFAULT_PROGRAM の配信先。番組全体の情報なので登場回ごとではなく1か所で持つ */
+const STREAMING: { name: string; url: string }[] = [
+  { name: 'Prime Video', url: 'https://www.amazon.co.jp/gp/video/detail/B07HGT7XGM' },
+  { name: 'Hulu', url: 'https://www.hulu.jp/robert-akiyama-no-shimin-pool-banzai' },
+  { name: 'U-NEXT', url: 'https://video.unext.jp/title/SID0038227' },
+  { name: 'FANYチャンネル', url: 'https://osaka-channel.hikaritv.net/' },
+]
 
 /** 施設ページの「番組に登場」欄。ログインユーザーが追加・修正できる */
 export function AppearanceSection({ poolId }: { poolId: string }) {
@@ -55,6 +63,19 @@ export function AppearanceSection({ poolId }: { poolId: string }) {
             )}
           </div>
         ),
+      )}
+      {items.some((a) => a.program === DEFAULT_PROGRAM) && (
+        <p className="small" style={{ margin: 0 }}>
+          配信中：
+          {STREAMING.map((s, i) => (
+            <Fragment key={s.url}>
+              {i > 0 && ' / '}
+              <a href={s.url} target="_blank" rel="noopener noreferrer">
+                {s.name} <ExternalLink size={12} aria-hidden style={{ verticalAlign: -1 }} />
+              </a>
+            </Fragment>
+          ))}
+        </p>
       )}
       {session &&
         (editing === 'new' ? (
