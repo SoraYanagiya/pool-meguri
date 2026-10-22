@@ -16,7 +16,8 @@
       "has_25m": true,
       "has_50m": true,
       "note": "都立施設。50m×8レーン（水深1.2〜2.2m）と25m×6レーン（水深1.2〜1.4m）。大会・団体貸切時は個人利用できない場合がある。",
-      "source_url": "https://www.tef.or.jp/tmg/individualleaflet02.pdf"
+      "source_url": "https://www.tef.or.jp/tmg/individualleaflet02.pdf",
+      "fee_note": "一般1回2時間30分700円（超過1時間350円）、中学生以下（3歳以上）300円（超過1時間150円）。"
     },
     {
       "id": "564c3338-d0b7-4edc-aeea-93f9385da04d",
@@ -33,7 +34,8 @@
       "has_50m": true,
       "has_diving_pool": true,
       "note": "都立施設。東京2020大会の競泳会場。メインプール（50m設定）とサブプール（25m設定）は団体貸出レーン以外を個人利用枠として開放。ダイビングプールあり。",
-      "source_url": "https://www.tef.or.jp/news/riyouannai_7.pdf"
+      "source_url": "https://www.tef.or.jp/news/riyouannai_7.pdf",
+      "fee_note": "一般2時間30分700円（延長1時間350円）、中学生以下1回300円。"
     },
     {
       "id": "dc6e8823-8c2f-4cd4-a692-418ff1ba5164",
@@ -48,7 +50,8 @@
       "has_25m": true,
       "has_kids_pool": true,
       "note": "都立施設。25mプール、初心者用プール（水深80cm〜1m）、幼児用プール（水深40〜50cm）。",
-      "source_url": "https://report.iko-yo.net/articles/14432"
+      "source_url": "https://report.iko-yo.net/articles/14432",
+      "fee_note": "高校生以上320円、中学生以下220円、年長未満無料。"
     }
   ]
 }

@@ -119,7 +119,8 @@
       "official_url": "https://www.city.chuo.lg.jp/a0015/bunkakankou/sports/mosikomihoho/pool/suposenonsuipu-ru.html",
       "is_indoor": true,
       "note": "浜町公園内。",
-      "source_url": "https://www.city.chuo.lg.jp/sisetugaido/supotu/onsuipuru/index.html"
+      "source_url": "https://www.city.chuo.lg.jp/sisetugaido/supotu/onsuipuru/index.html",
+      "fee_note": "一般2時間500円、小・中学生250円、区民大人350円（区民利用証の提示が必要）。延長1時間ごとに一般250円。区内在住の小・中学生、65歳以上、幼児は無料（利用証が必要）。"
     },
     {
       "id": "e4356dc5-5103-4bd5-80ee-8a4b0f88ed62",
@@ -133,7 +134,8 @@
       "official_url": "https://www.city.chuo.lg.jp/a0015/bunkakankou/sports/mosikomihoho/pool/tukisimasupo-tupurazaonsuipu-ru.html",
       "is_indoor": true,
       "note": "初回利用時に住所確認書類が必要。",
-      "source_url": "https://www.mec-h.com/town/mh-harumi/33"
+      "source_url": "https://www.mec-h.com/town/mh-harumi/33",
+      "fee_note": "一般2時間500円、小・中学生250円、区民大人350円（区民利用証の提示が必要）。延長1時間ごとに一般250円。区内在住の小・中学生、65歳以上、幼児は無料（利用証が必要）。"
     },
     {
       "id": "f061aed8-c702-4a0b-a5cb-fd9ca35c7b2c",
@@ -150,7 +152,8 @@
       "has_25m": true,
       "has_kids_pool": false,
       "note": "25m×6コース。",
-      "source_url": "https://www.city.chuo.lg.jp/a0015/bunkakankou/sports/mosikomihoho/pool/gakkouonnsuipu-ru.html"
+      "source_url": "https://www.city.chuo.lg.jp/a0015/bunkakankou/sports/mosikomihoho/pool/gakkouonnsuipu-ru.html",
+      "fee_note": "区民大人2時間350円、区外大人500円、区外小・中学生250円。区民の小・中学生と65歳以上、幼児は無料（利用証が必要）。延長1時間ごとに区民170円・区外250円。"
     },
     {
       "id": "01e9f7e5-ed4b-4a70-900e-4288c5e34e59",
@@ -167,7 +170,8 @@
       "has_25m": true,
       "has_kids_pool": true,
       "note": "25m×6コース、幼児用プール。",
-      "source_url": "https://www.city.chuo.lg.jp/a0015/bunkakankou/sports/mosikomihoho/pool/gakkouonnsuipu-ru.html"
+      "source_url": "https://www.city.chuo.lg.jp/a0015/bunkakankou/sports/mosikomihoho/pool/gakkouonnsuipu-ru.html",
+      "fee_note": "区民大人2時間350円、区外大人500円、区外小・中学生250円。区民の小・中学生と65歳以上、幼児は無料（利用証が必要）。延長1時間ごとに区民170円・区外250円。"
     },
     {
       "id": "94e6fa77-9359-4ff7-be55-64327eba8bfe",
@@ -184,7 +188,8 @@
       "has_25m": true,
       "has_kids_pool": true,
       "note": "25m×6コース、幼児用プール。",
-      "source_url": "https://www.city.chuo.lg.jp/a0015/bunkakankou/sports/mosikomihoho/pool/gakkouonnsuipu-ru.html"
+      "source_url": "https://www.city.chuo.lg.jp/a0015/bunkakankou/sports/mosikomihoho/pool/gakkouonnsuipu-ru.html",
+      "fee_note": "区民大人2時間350円、区外大人500円、区外小・中学生250円。区民の小・中学生と65歳以上、幼児は無料（利用証が必要）。延長1時間ごとに区民170円・区外250円。"
     },
     {
       "id": "3ca73f08-de91-42e6-af81-d4a0ffc894d5",
@@ -201,7 +206,8 @@
       "has_25m": true,
       "has_kids_pool": false,
       "note": "25m×8コース。",
-      "source_url": "https://www.city.chuo.lg.jp/a0015/bunkakankou/sports/mosikomihoho/pool/gakkouonnsuipu-ru.html"
+      "source_url": "https://www.city.chuo.lg.jp/a0015/bunkakankou/sports/mosikomihoho/pool/gakkouonnsuipu-ru.html",
+      "fee_note": "区民大人2時間350円、区外大人500円、区外小・中学生250円。区民の小・中学生と65歳以上、幼児は無料（利用証が必要）。延長1時間ごとに区民170円・区外250円。"
     },
     {
       "id": "05b84e1c-db03-418e-b303-2cf24ffa685d",
@@ -218,7 +224,8 @@
       "has_kids_pool": true,
       "season_note": "夏季のみ",
       "note": "夏季のみ（7月1日〜9月15日）。50m×8コース、スライダー付き子ども用プール。",
-      "source_url": "https://www.city.minato.tokyo.jp/senryakukouhou/pooltokusyu.html"
+      "source_url": "https://www.city.minato.tokyo.jp/senryakukouhou/pooltokusyu.html",
+      "fee_note": "2時間で大人600円、小・中・高校生100円。超過1時間ごとに大人300円・小中高生50円。未就学児、区内在住の65歳以上は無料。"
     },
     {
       "id": "c8bac823-f383-45cf-863f-19d764289958",
@@ -233,7 +240,8 @@
       "is_indoor": true,
       "has_25m": true,
       "note": "2027年3月31日まで休止。大プール25m×6コース、小プール13m×7m。",
-      "source_url": "https://www.city.minato.tokyo.jp/sports/kuse/kocho/faq/sports/003.html"
+      "source_url": "https://www.city.minato.tokyo.jp/sports/kuse/kocho/faq/sports/003.html",
+      "fee_note": "区内在住・在勤・在学者500円、区外者800円、小・中・高校生100円。区内在住の65歳以上と未就学児は無料。"
     },
     {
       "id": "b81a9dc5-d257-488a-a6f5-86e907d50b57",
@@ -247,7 +255,8 @@
       "lng": 139.74971,
       "official_url": "https://www.city.minato.tokyo.jp/shisetsu/sport/sport/01.html",
       "is_indoor": true,
-      "source_url": "https://www.city.minato.tokyo.jp/easyjp/facility/pools.html"
+      "source_url": "https://www.city.minato.tokyo.jp/easyjp/facility/pools.html",
+      "fee_note": "1回2時間で大人（区内在住・在勤・在学者）500円、小・中・高校生100円。区内在住の65歳以上と3歳以上の未就学児は無料。第1・3日曜は区民無料、第2・4土曜は小中高生無料。"
     },
     {
       "id": "859fae82-8d21-4775-aa19-2b6864ec2256",
@@ -261,7 +270,8 @@
       "lng": 139.73053,
       "official_url": "https://www.city.minato.tokyo.jp/shisetsu/sport/sport/11.html",
       "is_indoor": true,
-      "source_url": "https://www.city.minato.tokyo.jp/easyjp/facility/pools.html"
+      "source_url": "https://www.city.minato.tokyo.jp/easyjp/facility/pools.html",
+      "fee_note": "1回2時間で大人（区内在住・在勤・在学者）500円、小・中・高校生100円。区内在住の65歳以上と3歳以上の未就学児は無料。第1・3日曜は区民無料、第2・4土曜は小中高生無料。"
     },
     {
       "id": "a398f867-9027-4e43-918a-8a907e98b420",
@@ -275,7 +285,8 @@
       "lng": 139.75029,
       "official_url": "https://www.city.minato.tokyo.jp/shisetsu/sport/sport/13.html",
       "is_indoor": true,
-      "source_url": "https://www.city.minato.tokyo.jp/easyjp/facility/pools.html"
+      "source_url": "https://www.city.minato.tokyo.jp/easyjp/facility/pools.html",
+      "fee_note": "1回2時間で大人（区内在住・在勤・在学者）500円、小・中・高校生100円。区内在住の65歳以上と3歳以上の未就学児は無料。第1・3日曜は区民無料、第2・4土曜は小中高生無料。"
     },
     {
       "id": "be458bcf-fdbf-46ff-a86e-0fe4bdba9fcb",
@@ -288,7 +299,8 @@
       "lat": 35.640907,
       "lng": 139.734207,
       "is_indoor": true,
-      "source_url": "https://www.city.minato.tokyo.jp/easyjp/facility/pools.html"
+      "source_url": "https://www.city.minato.tokyo.jp/easyjp/facility/pools.html",
+      "fee_note": "1回2時間で大人（区内在住・在勤・在学者）500円、小・中・高校生100円。区内在住の65歳以上と3歳以上の未就学児は無料。第1・3日曜は区民無料、第2・4土曜は小中高生無料。"
     },
     {
       "id": "4dd68a7a-dc8e-452c-93a9-ec58f839c60a",
@@ -302,7 +314,8 @@
       "lng": 139.720566,
       "official_url": "https://www.city.minato.tokyo.jp/shisetsu/sport/sport/02.html",
       "is_indoor": true,
-      "source_url": "https://www.city.minato.tokyo.jp/easyjp/facility/pools.html"
+      "source_url": "https://www.city.minato.tokyo.jp/easyjp/facility/pools.html",
+      "fee_note": "1回2時間で大人（区内在住・在勤・在学者）500円、小・中・高校生100円。区内在住の65歳以上と3歳以上の未就学児は無料。第1・3日曜は区民無料、第2・4土曜は小中高生無料。"
     },
     {
       "id": "49a12c5e-0393-46f8-bcd7-b5648af21ec6",
@@ -315,7 +328,8 @@
       "lat": 35.668095,
       "lng": 139.731277,
       "is_indoor": true,
-      "source_url": "https://www.city.minato.tokyo.jp/easyjp/facility/pools.html"
+      "source_url": "https://www.city.minato.tokyo.jp/easyjp/facility/pools.html",
+      "fee_note": "1回2時間で大人（区内在住・在勤・在学者）500円、小・中・高校生100円。区内在住の65歳以上と3歳以上の未就学児は無料。第1・3日曜は区民無料、第2・4土曜は小中高生無料。"
     },
     {
       "id": "0e47d274-fc09-4c44-9d54-0165390e208b",
@@ -329,7 +343,8 @@
       "lng": 139.777161,
       "official_url": "https://www.city.minato.tokyo.jp/shisetsu/sport/sport/15.html",
       "is_indoor": true,
-      "source_url": "https://www.city.minato.tokyo.jp/easyjp/facility/pools.html"
+      "source_url": "https://www.city.minato.tokyo.jp/easyjp/facility/pools.html",
+      "fee_note": "1回2時間で大人（区内在住・在勤・在学者）500円、小・中・高校生100円。区内在住の65歳以上と3歳以上の未就学児は無料。第1・3日曜は区民無料、第2・4土曜は小中高生無料。"
     },
     {
       "id": "ee8110f1-fb56-4663-b3cb-9218f59c7be2",
@@ -343,7 +358,8 @@
       "lng": 139.726837,
       "official_url": "https://www.city.minato.tokyo.jp/sports/kodomo/sports/sports/shirokanenooka_pool.html",
       "is_indoor": true,
-      "source_url": "https://www.city.minato.tokyo.jp/senryakukouhou/pooltokusyu.html"
+      "source_url": "https://www.city.minato.tokyo.jp/senryakukouhou/pooltokusyu.html",
+      "fee_note": "1回2時間で大人（区内在住・在勤・在学者）500円、小・中・高校生100円、同伴者800円。区内在住の65歳以上と3歳以上の未就学児は無料。"
     },
     {
       "id": "b04b5982-492f-4807-aded-1cab599a7346",
@@ -356,7 +372,8 @@
       "lat": 35.644978,
       "lng": 139.741058,
       "is_indoor": true,
-      "source_url": "https://www.city.minato.tokyo.jp/senryakukouhou/pooltokusyu.html"
+      "source_url": "https://www.city.minato.tokyo.jp/senryakukouhou/pooltokusyu.html",
+      "fee_note": "1回2時間で大人（区内在住・在勤・在学者）500円、小・中・高校生100円。区内在住の65歳以上と3歳以上の未就学児は無料。第1・3日曜は区民無料、第2・4土曜は小中高生無料。"
     },
     {
       "id": "a8f37ae5-ef79-4d4b-a568-732edb331f2e",
@@ -370,7 +387,8 @@
       "lng": 139.746078,
       "official_url": "https://www.city.minato.tokyo.jp/sports/shibaurapool.html",
       "is_indoor": true,
-      "source_url": "https://www.city.minato.tokyo.jp/senryakukouhou/pooltokusyu.html"
+      "source_url": "https://www.city.minato.tokyo.jp/senryakukouhou/pooltokusyu.html",
+      "fee_note": "1回2時間で大人（区内在住・在勤・在学者）500円、小・中・高校生100円、同伴者800円。区内在住の65歳以上と3歳以上の未就学児は無料。"
     },
     {
       "id": "fce81cfc-1d06-4784-8225-976b7c0fbb19",
@@ -383,7 +401,8 @@
       "lat": 35.646198,
       "lng": 139.751663,
       "is_indoor": true,
-      "source_url": "https://www.city.minato.tokyo.jp/senryakukouhou/pooltokusyu.html"
+      "source_url": "https://www.city.minato.tokyo.jp/senryakukouhou/pooltokusyu.html",
+      "fee_note": "1回2時間で大人（区内在住・在勤・在学者）500円、小・中・高校生100円。区内在住の65歳以上と3歳以上の未就学児は無料。第1・3日曜は区民無料、第2・4土曜は小中高生無料。"
     },
     {
       "id": "469f7e4b-4d04-44a5-b35f-40fab524cb13",
@@ -489,7 +508,8 @@
       "is_indoor": true,
       "has_25m": true,
       "note": "25m×11m。",
-      "source_url": "https://www.city.taito.lg.jp/kusei/kuseikokai/johokokai_kojinjoho/gyoseishiryo/siryoshu/taitokugyouseisiryou.files/R6_3_1_1_05_taiikusisetu.pdf"
+      "source_url": "https://www.city.taito.lg.jp/kusei/kuseikokai/johokokai_kojinjoho/gyoseishiryo/siryoshu/taitokugyouseisiryou.files/R6_3_1_1_05_taiikusisetu.pdf",
+      "fee_note": "1時間で大人250円、高校生相当以下100円、65歳以上120円（区内在住・在勤者は登録が必要）。"
     },
     {
       "id": "f6ab9b13-c91d-4f19-ba03-437b313860ed",
@@ -505,7 +525,8 @@
       "is_indoor": true,
       "has_25m": true,
       "note": "都立高校の温水プールを台東区が区民向けに開放。25m×5コース。",
-      "source_url": "https://www.city.taito.lg.jp/kusei/kuseikokai/johokokai_kojinjoho/gyoseishiryo/siryoshu/taitokugyouseisiryou.files/R6_3_1_1_05_taiikusisetu.pdf"
+      "source_url": "https://www.city.taito.lg.jp/kusei/kuseikokai/johokokai_kojinjoho/gyoseishiryo/siryoshu/taitokugyouseisiryou.files/R6_3_1_1_05_taiikusisetu.pdf",
+      "fee_note": "大人1時間250円、小人（小学生〜高校生相当）100円、65歳以上120円（事前登録が必要）。区内在住・在勤・在学者のみ。"
     },
     {
       "id": "3c48895a-512b-4146-a9c8-b3b2150ad10a",
@@ -531,7 +552,8 @@
       "lng": 139.830536,
       "official_url": "https://www.city.sumida.lg.jp/sisetu_info/sports/sumidasportcenter.html",
       "is_indoor": true,
-      "source_url": "https://www.city.sumida.lg.jp/faq/sisetu_info/sports/1066.html"
+      "source_url": "https://www.city.sumida.lg.jp/faq/sisetu_info/sports/1066.html",
+      "fee_note": "平日は2時間で一般440円、小・中学生220円、65歳以上110円（1日券は一般770円）。土日祝は2時間で一般550円、小・中学生280円（1日券は一般1,100円）。"
     },
     {
       "id": "aeda0bac-9de3-4582-bfc7-2f31537a2000",
@@ -544,7 +566,8 @@
       "lng": 139.784256,
       "official_url": "https://www.city.koto.lg.jp/104010/shisetsuannai/kokyo/sportsshisetsu/taikukan/14016.html",
       "is_indoor": true,
-      "source_url": "https://www.city.koto.lg.jp/011501/kuse/koho/kuho/h26/h2607/documents/072105.pdf"
+      "source_url": "https://www.city.koto.lg.jp/011501/kuse/koho/kuho/h26/h2607/documents/072105.pdf",
+      "fee_note": "2時間で一般450円、高校生以下150円、区内在住65歳以上150円。"
     },
     {
       "id": "7f4ecb23-36d5-4390-a84f-84b9f4383c64",
@@ -557,7 +580,8 @@
       "lng": 139.821762,
       "official_url": "https://www.city.koto.lg.jp/104010/shisetsuannai/kokyo/sportsshisetsu/taikukan/14013.html",
       "is_indoor": true,
-      "source_url": "https://www.city.koto.lg.jp/011501/kuse/koho/kuho/h26/h2607/documents/072105.pdf"
+      "source_url": "https://www.city.koto.lg.jp/011501/kuse/koho/kuho/h26/h2607/documents/072105.pdf",
+      "fee_note": "2時間で一般450円、高校生以下150円、区内在住65歳以上150円。"
     },
     {
       "id": "bc1bc759-3a79-4627-ba00-a07d0edd2409",
@@ -573,7 +597,8 @@
       "has_25m": true,
       "has_kids_pool": true,
       "note": "25mプール、小プール、幼児用プール。",
-      "source_url": "https://www.city.koto.lg.jp/011501/kuse/koho/kuho/h26/h2607/documents/072105.pdf"
+      "source_url": "https://www.city.koto.lg.jp/011501/kuse/koho/kuho/h26/h2607/documents/072105.pdf",
+      "fee_note": "2時間で一般450円、高校生以下150円、区内在住65歳以上150円。"
     },
     {
       "id": "55486243-4f6a-4fa8-82ec-090fea114c30",
@@ -586,7 +611,8 @@
       "lng": 139.838501,
       "official_url": "https://www.city.koto.lg.jp/104010/shisetsuannai/kokyo/sportsshisetsu/taikukan/14017.html",
       "is_indoor": true,
-      "source_url": "https://www.city.koto.lg.jp/011501/kuse/koho/kuho/h26/h2607/documents/072105.pdf"
+      "source_url": "https://www.city.koto.lg.jp/011501/kuse/koho/kuho/h26/h2607/documents/072105.pdf",
+      "fee_note": "2時間で一般450円、高校生以下150円、区内在住65歳以上150円。"
     },
     {
       "id": "71b17f4d-65b7-4012-a880-7d258b532abd",
@@ -600,7 +626,8 @@
       "official_url": "https://www.city.koto.lg.jp/104010/shisetsuannai/kokyo/sportsshisetsu/okunai/17255.html",
       "is_indoor": true,
       "note": "歩行コースあり。",
-      "source_url": "https://www.city.koto.lg.jp/104010/shisetsuannai/kokyo/sportsshisetsu/okunai/17255.html"
+      "source_url": "https://www.city.koto.lg.jp/104010/shisetsuannai/kokyo/sportsshisetsu/okunai/17255.html",
+      "fee_note": "2時間で一般450円、高校生以下150円、区内在住65歳以上150円。"
     },
     {
       "id": "21f301fc-1aa4-4252-aad7-586d16677f42",
@@ -642,7 +669,8 @@
       "lat": 35.624744,
       "lng": 139.728043,
       "is_indoor": true,
-      "source_url": "https://www.opendata.metro.tokyo.lg.jp/shinagawa/pool.csv"
+      "source_url": "https://www.opendata.metro.tokyo.lg.jp/shinagawa/pool.csv",
+      "fee_note": "2時間で大人350円、4歳〜中学生170円（超過30分ごとに大人80円・子ども40円）。区内在住の70歳以上は無料。"
     },
     {
       "id": "762a6aae-f8a8-41ba-b774-b1be53cfc76b",
@@ -655,7 +683,8 @@
       "lat": 35.61578,
       "lng": 139.717072,
       "is_indoor": true,
-      "source_url": "https://www.opendata.metro.tokyo.lg.jp/shinagawa/pool.csv"
+      "source_url": "https://www.opendata.metro.tokyo.lg.jp/shinagawa/pool.csv",
+      "fee_note": "2時間で大人350円、4歳〜中学生170円（超過30分ごとに大人80円・子ども40円）。区内在住の70歳以上は無料。"
     },
     {
       "id": "5c8c5014-324d-4b3e-ad11-7c6bd7ff4645",
@@ -667,7 +696,8 @@
       "lat": 35.61203,
       "lng": 139.710678,
       "is_indoor": true,
-      "source_url": "https://www.opendata.metro.tokyo.lg.jp/shinagawa/pool.csv"
+      "source_url": "https://www.opendata.metro.tokyo.lg.jp/shinagawa/pool.csv",
+      "fee_note": "2時間で大人350円、4歳〜中学生170円（超過30分ごとに大人80円・子ども40円）。区内在住の70歳以上は無料。"
     },
     {
       "id": "3e14f3e1-f10d-470a-a669-1b70c2fa67df",
@@ -680,7 +710,8 @@
       "lat": 35.601559,
       "lng": 139.752518,
       "is_indoor": true,
-      "source_url": "https://www.opendata.metro.tokyo.lg.jp/shinagawa/pool.csv"
+      "source_url": "https://www.opendata.metro.tokyo.lg.jp/shinagawa/pool.csv",
+      "fee_note": "2時間で大人350円、4歳〜中学生170円（超過30分ごとに大人80円・子ども40円）。区内在住の70歳以上は無料。"
     },
     {
       "id": "4567eb2e-c231-4a44-836a-0d0ca55bddd3",
@@ -693,7 +724,8 @@
       "lat": 35.617058,
       "lng": 139.738342,
       "is_indoor": true,
-      "source_url": "https://www.opendata.metro.tokyo.lg.jp/shinagawa/pool.csv"
+      "source_url": "https://www.opendata.metro.tokyo.lg.jp/shinagawa/pool.csv",
+      "fee_note": "2時間で大人350円、4歳〜中学生170円（超過30分ごとに大人80円・子ども40円）。区内在住の70歳以上は無料。"
     },
     {
       "id": "de96a9b1-0c70-4952-931b-76357f013f22",
@@ -706,7 +738,8 @@
       "lat": 35.607521,
       "lng": 139.725403,
       "is_indoor": true,
-      "source_url": "https://www.opendata.metro.tokyo.lg.jp/shinagawa/pool.csv"
+      "source_url": "https://www.opendata.metro.tokyo.lg.jp/shinagawa/pool.csv",
+      "fee_note": "2時間で大人350円、4歳〜中学生170円（超過30分ごとに大人80円・子ども40円）。区内在住の70歳以上は無料。"
     },
     {
       "id": "e97d4375-fd59-44e4-aa0c-eda7ee023511",
@@ -733,7 +766,8 @@
       "address": "東京都目黒区駒場2-19-39",
       "lat": 35.657799,
       "lng": 139.679169,
-      "source_url": "https://data.bodik.jp/dataset/5d719db4-b0cc-46a5-83cd-4342468755cb"
+      "source_url": "https://data.bodik.jp/dataset/5d719db4-b0cc-46a5-83cd-4342468755cb",
+      "fee_note": "2時間以内で大人400円、65歳以上200円、小人（高校生相当以下）200円。延長1時間ごとに大人300円・65歳以上と小人150円。"
     },
     {
       "id": "03afafd5-8510-44fb-8e7b-45cc7e2466f2",
@@ -745,7 +779,8 @@
       "lat": 35.635323,
       "lng": 139.707764,
       "is_indoor": true,
-      "source_url": "https://data.bodik.jp/dataset/5d719db4-b0cc-46a5-83cd-4342468755cb"
+      "source_url": "https://data.bodik.jp/dataset/5d719db4-b0cc-46a5-83cd-4342468755cb",
+      "fee_note": "2時間以内で大人400円、65歳以上200円、小人（高校生相当以下）200円。延長1時間ごとに大人300円・65歳以上と小人150円。"
     },
     {
       "id": "1191bea5-b52b-404f-a621-23a7b5610b3e",
@@ -759,7 +794,8 @@
       "is_indoor": false,
       "season_note": "夏季のみ",
       "note": "夏季のみ。",
-      "source_url": "https://data.bodik.jp/dataset/5d719db4-b0cc-46a5-83cd-4342468755cb"
+      "source_url": "https://data.bodik.jp/dataset/5d719db4-b0cc-46a5-83cd-4342468755cb",
+      "fee_note": "2時間以内で大人200円、65歳以上100円、小人（高校生相当以下）100円。延長1時間ごとに大人150円・65歳以上と小人70円。"
     },
     {
       "id": "6354bb1f-df65-4a26-9ea1-e064c3d2616e",
@@ -772,7 +808,8 @@
       "lat": 35.634594,
       "lng": 139.687653,
       "is_indoor": true,
-      "source_url": "https://data.bodik.jp/dataset/5d719db4-b0cc-46a5-83cd-4342468755cb"
+      "source_url": "https://data.bodik.jp/dataset/5d719db4-b0cc-46a5-83cd-4342468755cb",
+      "fee_note": "2時間で大人400円、高校生以下・65歳以上200円（超過1時間ごとに300円・150円）。土曜は中学生以下無料（長期休業期間を除く）。"
     },
     {
       "id": "dfbc9b23-124b-416c-aef3-f2045cedb3cd",
@@ -785,7 +822,8 @@
       "lat": 35.618874,
       "lng": 139.690491,
       "is_indoor": true,
-      "source_url": "https://data.bodik.jp/dataset/5d719db4-b0cc-46a5-83cd-4342468755cb"
+      "source_url": "https://data.bodik.jp/dataset/5d719db4-b0cc-46a5-83cd-4342468755cb",
+      "fee_note": "2時間で大人400円、高校生以下・65歳以上200円（超過1時間ごとに300円・150円）。土曜は中学生以下無料（長期休業期間を除く）。"
     },
     {
       "id": "584ad9bc-ff13-46a9-b582-21cb5379f5e5",
@@ -798,7 +836,8 @@
       "lat": 35.610622,
       "lng": 139.67395,
       "is_indoor": true,
-      "source_url": "https://data.bodik.jp/dataset/5d719db4-b0cc-46a5-83cd-4342468755cb"
+      "source_url": "https://data.bodik.jp/dataset/5d719db4-b0cc-46a5-83cd-4342468755cb",
+      "fee_note": "2時間で大人400円、高校生以下・65歳以上200円（超過1時間ごとに300円・150円）。土曜は中学生以下無料（長期休業期間を除く）。"
     },
     {
       "id": "dfe73eda-2abf-4c65-9e36-cef351a84b78",
@@ -811,7 +850,8 @@
       "lng": 139.73671,
       "official_url": "https://www.city.ota.tokyo.jp/shisetsu/sports/pool/haginaka_pool.html",
       "note": "屋内プールと屋外プール（夏季）がある。",
-      "source_url": "https://www.city.ota.tokyo.jp/shisetsu/sports/pool/haginaka_pool.html"
+      "source_url": "https://www.city.ota.tokyo.jp/shisetsu/sports/pool/haginaka_pool.html",
+      "fee_note": "温水プール（夏季以外）は2時間で高校生以上600円、中学生以下250円（超過30分ごとに150円・60円）。夏季プールは高校生以上450円、中学生以下150円。"
     },
     {
       "id": "e6c4b28f-cdf6-41a9-a813-fd2b44c34a78",
@@ -855,7 +895,8 @@
       "official_url": "https://www.city.ota.tokyo.jp/shisetsu/sports/pool/yagichikumin_c_onsui/index.html",
       "is_indoor": true,
       "note": "東急多摩川線武蔵新田駅から徒歩約10分。",
-      "source_url": "https://www.city.ota.tokyo.jp/shisetsu/sports/pool/yagichikumin_c_onsui/index.html"
+      "source_url": "https://www.city.ota.tokyo.jp/shisetsu/sports/pool/yagichikumin_c_onsui/index.html",
+      "fee_note": "2時間以内で高校生以上460円、小・中学生100円（超過30分ごとに120円・20円）。区内在住の65歳以上は2回目無料。"
     },
     {
       "id": "283be841-d7ac-4a75-92ce-53fe4bb329d1",
@@ -887,7 +928,8 @@
       "has_kids_pool": true,
       "season_note": "夏季のみ",
       "note": "夏季のみ。流水プール、子ども用プール、ウォータースライダー2基。",
-      "source_url": "https://www.city.setagaya.lg.jp/01430/15377.html"
+      "source_url": "https://www.city.setagaya.lg.jp/01430/15377.html",
+      "fee_note": "大人1日券1,300円、午前・午後・夜間券750円。18歳以下・65歳以上は1日券450円、午前・午後・夜間券250円。幼児無料。"
     },
     {
       "id": "d0c437e7-2a20-4aac-826e-1484c0bd6d74",
@@ -900,7 +942,8 @@
       "lng": 139.618393,
       "official_url": "https://www.city.setagaya.lg.jp/01430/9054.html",
       "is_indoor": true,
-      "source_url": "https://www.city.setagaya.lg.jp/01430/9054.html"
+      "source_url": "https://www.city.setagaya.lg.jp/01430/9054.html",
+      "fee_note": "通年1時間券で大人290円、18歳以下・65歳以上90円、幼児無料。夏季は2時間券で大人590円、18歳以下・65歳以上180円。"
     },
     {
       "id": "dbc2ef9b-e404-4cf2-b6e5-5dfbdc0ca746",
@@ -914,7 +957,8 @@
       "lng": 139.652145,
       "official_url": "https://www.city.setagaya.lg.jp/03685/9055.html",
       "is_indoor": true,
-      "source_url": "https://www.city.setagaya.lg.jp/03685/9055.html"
+      "source_url": "https://www.city.setagaya.lg.jp/03685/9055.html",
+      "fee_note": "大人2時間540円（1時間270円）、高齢者・18歳以下170円（1時間90円）、幼児無料。"
     },
     {
       "id": "4a2df162-5884-40a9-89bd-b09301c5c10f",
@@ -928,7 +972,8 @@
       "lng": 139.668777,
       "official_url": "https://www.city.setagaya.lg.jp/03685/9056.html",
       "is_indoor": true,
-      "source_url": "https://www.city.setagaya.lg.jp/03685/9056.html"
+      "source_url": "https://www.city.setagaya.lg.jp/03685/9056.html",
+      "fee_note": "大人2時間540円（1時間270円）、高齢者・18歳以下170円（1時間90円）、幼児無料。"
     },
     {
       "id": "ed95598d-99d3-4780-bf29-14e1c0d8d08c",
@@ -943,7 +988,8 @@
       "official_url": "https://www.city.setagaya.lg.jp/03685/9057.html",
       "is_indoor": true,
       "note": "中町ふれあいホール併設。",
-      "source_url": "https://www.city.setagaya.lg.jp/03685/9057.html"
+      "source_url": "https://www.city.setagaya.lg.jp/03685/9057.html",
+      "fee_note": "大人2時間540円（1時間270円）、高齢者・18歳以下170円（1時間90円）、幼児無料。"
     },
     {
       "id": "a8406d37-7bdb-458b-8718-c2fe69c35786",
@@ -957,7 +1003,8 @@
       "lng": 139.60173,
       "official_url": "https://www.city.setagaya.lg.jp/03685/9058.html",
       "is_indoor": true,
-      "source_url": "https://www.city.setagaya.lg.jp/03685/9058.html"
+      "source_url": "https://www.city.setagaya.lg.jp/03685/9058.html",
+      "fee_note": "大人2時間540円（1時間270円）、高齢者・18歳以下170円（1時間90円）、幼児無料。"
     },
     {
       "id": "7ccd1d53-4c38-424f-be86-7c3d436c0f45",
@@ -970,7 +1017,8 @@
       "lng": 139.680557,
       "official_url": "https://www.city.shibuya.tokyo.jp/shisetsu/sports-shisetsu/sports-center/",
       "is_indoor": true,
-      "source_url": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/248884989c494fec84b1c66bd26a446b/eigyoshisetu_14.pdf"
+      "source_url": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/248884989c494fec84b1c66bd26a446b/eigyoshisetu_14.pdf",
+      "fee_note": "1時間で一般300円、小・中学生50円。"
     },
     {
       "id": "d857d417-e219-4694-92e9-5f2a22cb8b61",
@@ -983,7 +1031,8 @@
       "lng": 139.703857,
       "official_url": "https://www.city.shibuya.tokyo.jp/shisetsu/sports-shisetsu/sports-center/sp8_daikanyama.html",
       "is_indoor": true,
-      "source_url": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/248884989c494fec84b1c66bd26a446b/eigyoshisetu_14.pdf"
+      "source_url": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/248884989c494fec84b1c66bd26a446b/eigyoshisetu_14.pdf",
+      "fee_note": "1時間で一般300円、小・中学生50円。"
     },
     {
       "id": "43db3776-48bf-44de-823d-7d3f7adb9ada",
@@ -996,7 +1045,8 @@
       "lng": 139.709381,
       "official_url": "https://www.city.shibuya.tokyo.jp/shisetsu/sports-shisetsu/sports-center/higashi_plaza_sports.html",
       "is_indoor": true,
-      "source_url": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/248884989c494fec84b1c66bd26a446b/eigyoshisetu_14.pdf"
+      "source_url": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/248884989c494fec84b1c66bd26a446b/eigyoshisetu_14.pdf",
+      "fee_note": "1時間で一般300円、小・中学生50円。"
     },
     {
       "id": "e3361976-68f5-483e-bb9a-02ff9128228b",
@@ -1024,7 +1074,8 @@
       "lng": 139.682281,
       "official_url": "https://www.city.shibuya.tokyo.jp/shisetsu/sports-shisetsu/pool/pool-calendar.html",
       "is_indoor": true,
-      "source_url": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/248884989c494fec84b1c66bd26a446b/eigyoshisetu_14.pdf"
+      "source_url": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/248884989c494fec84b1c66bd26a446b/eigyoshisetu_14.pdf",
+      "fee_note": "1時間で高校生以上300円、小・中学生50円、幼児無料（延長1時間ごとに同額）。区内在住・在勤・在学の60歳以上は登録で無料。"
     },
     {
       "id": "789c5d82-558f-4cef-a50e-b8f630d29b2c",
@@ -1038,7 +1089,8 @@
       "lng": 139.677017,
       "official_url": "https://www.city.shibuya.tokyo.jp/shisetsu/sports-shisetsu/pool/pool-calendar.html",
       "is_indoor": true,
-      "source_url": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/248884989c494fec84b1c66bd26a446b/eigyoshisetu_14.pdf"
+      "source_url": "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/248884989c494fec84b1c66bd26a446b/eigyoshisetu_14.pdf",
+      "fee_note": "1時間で高校生以上300円、小・中学生50円、幼児無料（延長1時間ごとに同額）。区内在住・在勤・在学の60歳以上は登録で無料。"
     },
     {
       "id": "d04dd060-2bd8-4aa5-ab21-23092cdc20bb",
@@ -1080,7 +1132,8 @@
       "lat": 35.709805,
       "lng": 139.660797,
       "is_indoor": true,
-      "source_url": "https://www.city.tokyo-nakano.lg.jp/kurashi/bunka/sports/nakanocyu-pool.files/nakanochuriyouannnai202509.pdf"
+      "source_url": "https://www.city.tokyo-nakano.lg.jp/kurashi/bunka/sports/nakanocyu-pool.files/nakanochuriyouannnai202509.pdf",
+      "fee_note": "大人（高校生以上）1時間200円、小・中学生100円、就学前無料。回数券（12回分）は大人2,000円・小中学生1,000円（第二中と共通）。"
     },
     {
       "id": "81856d25-b439-405a-bc2c-e88b6ead5800",
@@ -1094,7 +1147,8 @@
       "lng": 139.671524,
       "official_url": "https://www.city.tokyo-nakano.lg.jp/kurashi/bunka/sports/dai2cyu-pool.html",
       "is_indoor": true,
-      "source_url": "https://www.city.tokyo-nakano.lg.jp/kurashi/bunka/sports/dai2cyu-pool.html"
+      "source_url": "https://www.city.tokyo-nakano.lg.jp/kurashi/bunka/sports/dai2cyu-pool.html",
+      "fee_note": "大人（高校生以上）1時間200円、小・中学生100円、就学前無料。回数券（12回分）は大人2,000円・小中学生1,000円（中野中と共通）。"
     },
     {
       "id": "8ac67c55-f461-40bb-908b-a7cf75351f0a",
@@ -1108,7 +1162,8 @@
       "lng": 139.657852,
       "official_url": "https://www.city.suginami.tokyo.jp/s032/shisetsu/14554.html",
       "is_indoor": true,
-      "source_url": "https://www.city.suginami.tokyo.jp/kusei/gaiyou/shisetsu/genre/sports/pool/index.html"
+      "source_url": "https://www.city.suginami.tokyo.jp/kusei/gaiyou/shisetsu/genre/sports/pool/index.html",
+      "fee_note": "1時間につき大人250円、小人（4歳〜中学生）130円。区内在住・在勤・在学の高校生相当までは手続きで無料。"
     },
     {
       "id": "82655adf-1038-41d0-9041-61144d1ede4b",
@@ -1122,7 +1177,8 @@
       "official_url": "https://www.city.suginami.tokyo.jp/shisetsu/sports/pool/1007046.html",
       "is_indoor": true,
       "note": "高井戸市民センター内。",
-      "source_url": "https://www.city.suginami.tokyo.jp/kusei/gaiyou/shisetsu/genre/sports/pool/index.html"
+      "source_url": "https://www.city.suginami.tokyo.jp/kusei/gaiyou/shisetsu/genre/sports/pool/index.html",
+      "fee_note": "1時間につき大人250円、小人（4歳〜中学生）130円。区内在住・在勤・在学の高校生相当までは手続きで無料。"
     },
     {
       "id": "362ca1d1-315e-402d-afee-63cdc5cb1273",
@@ -1135,7 +1191,8 @@
       "lng": 139.601929,
       "official_url": "https://www.city.suginami.tokyo.jp/shisetsu/sports/pool/1007048.html",
       "note": "愛称「TAC杉並区上井草スポーツセンター」。",
-      "source_url": "https://www.city.suginami.tokyo.jp/kusei/gaiyou/shisetsu/genre/sports/pool/index.html"
+      "source_url": "https://www.city.suginami.tokyo.jp/kusei/gaiyou/shisetsu/genre/sports/pool/index.html",
+      "fee_note": "1時間につき大人250円、小人（4歳〜中学生）130円。区内在住・在勤・在学の高校生相当までは手続きで無料。"
     },
     {
       "id": "e367537e-345c-44a1-83eb-e71fefcf4081",
@@ -1150,7 +1207,8 @@
       "is_indoor": false,
       "season_note": "夏季のみ",
       "note": "夏季のみ。",
-      "source_url": "https://www.city.suginami.tokyo.jp/kusei/gaiyou/shisetsu/genre/sports/pool/index.html"
+      "source_url": "https://www.city.suginami.tokyo.jp/kusei/gaiyou/shisetsu/genre/sports/pool/index.html",
+      "fee_note": "2時間で大人500円、子ども（4歳〜中学生）250円、3歳以下無料。延長1時間ごとに大人250円・子ども130円。"
     },
     {
       "id": "cea963cb-c30f-4e88-8b37-7c4ebcee53fa",
@@ -1163,7 +1221,8 @@
       "lng": 139.61058,
       "official_url": "https://www.city.suginami.tokyo.jp/shisetsu/sports/pool/1007050.html",
       "is_indoor": true,
-      "source_url": "https://www.city.suginami.tokyo.jp/kusei/gaiyou/shisetsu/genre/sports/pool/index.html"
+      "source_url": "https://www.city.suginami.tokyo.jp/kusei/gaiyou/shisetsu/genre/sports/pool/index.html",
+      "fee_note": "1時間につき大人250円、小人（4歳〜中学生）130円。区内在住・在勤・在学の高校生相当までは手続きで無料。"
     },
     {
       "id": "0edd5dae-5b72-4896-ab7d-3f336b033bee",
@@ -1178,7 +1237,8 @@
       "is_indoor": true,
       "has_25m": true,
       "note": "25m×8コース（日本水泳連盟公認）。可動床修理のため1・2コースは2027年3月まで休止。",
-      "source_url": "https://www.city.toshima.lg.jp/501/bunka/sports/sports/003418/028294.html"
+      "source_url": "https://www.city.toshima.lg.jp/501/bunka/sports/sports/003418/028294.html",
+      "fee_note": "2時間で一般400円、小・中学生200円。"
     },
     {
       "id": "7b23fb81-5627-427c-b0e7-5441dc749df4",
@@ -1206,7 +1266,8 @@
       "is_indoor": true,
       "has_25m": true,
       "note": "25m×5コース。",
-      "source_url": "https://www.city.toshima.lg.jp/501/bunka/sports/sports/003418/003424.html"
+      "source_url": "https://www.city.toshima.lg.jp/501/bunka/sports/sports/003418/003424.html",
+      "fee_note": "一般400円、小・中学生200円（7〜9月は2時間制、その他の月は終日フリータイム制）。"
     },
     {
       "id": "a2858c2a-ea52-4788-bd47-9c64dbf0a995",
@@ -1222,7 +1283,8 @@
       "has_25m": true,
       "has_kids_pool": true,
       "note": "開閉式ドームの屋内プール。25m×6コース（可動床）、幼児開放時間あり。2027年8月末で閉館予定（2027年9月開設予定の堀船温水プールへ移行）。",
-      "source_url": "https://www.city.kita.lg.jp/culture-tourism-sports/sports/1010385/1010387/1010425/1010426.html"
+      "source_url": "https://www.city.kita.lg.jp/culture-tourism-sports/sports/1010385/1010387/1010425/1010426.html",
+      "fee_note": "大人（高校生以上）2時間500円、子ども（3歳〜中学生）100円、65歳以上250円。2時間を超えると30分ごとに大人120円。"
     },
     {
       "id": "6ac393f3-4290-4352-ad10-8679d11bbf1b",
@@ -1237,7 +1299,8 @@
       "is_indoor": false,
       "note": "夏季プール（王子三丁目児童遊園内）。",
       "source_url": "https://www.city.kita.lg.jp/culture-tourism-sports/sports/1010385/1010387/1010440.html",
-      "season_note": "夏季のみ"
+      "season_note": "夏季のみ",
+      "fee_note": "大人（高校生以上）2時間200円、中学生以下・65歳以上100円。延長1時間ごとに大人60円・子ども30円。"
     },
     {
       "id": "a72b1323-31c0-4cd8-abb0-1e6799f817a2",
@@ -1252,7 +1315,8 @@
       "is_indoor": false,
       "note": "夏季プール（南谷端公園内）。",
       "source_url": "https://www.city.kita.lg.jp/culture-tourism-sports/sports/1010385/1010387/1010440.html",
-      "season_note": "夏季のみ"
+      "season_note": "夏季のみ",
+      "fee_note": "大人（高校生以上）2時間200円、中学生以下・65歳以上100円。延長1時間ごとに大人60円・子ども30円。"
     },
     {
       "id": "681cc442-6a6f-4ad9-987a-163caaa52bdc",
@@ -1282,7 +1346,8 @@
       "has_25m": true,
       "has_kids_pool": true,
       "note": "25m×3コース、スライダー付き子ども用プール。",
-      "source_url": "https://www.city.kita.lg.jp/living/community/1002262/1019061.html"
+      "source_url": "https://www.city.kita.lg.jp/living/community/1002262/1019061.html",
+      "fee_note": "1時間で大人300円、子ども（3歳〜中学生）40円、65歳以上140円（要申請）。超過30分ごとに大人150円。2時間券あり。"
     },
     {
       "id": "37686dc9-2b78-4922-8add-a8e8f4834c5e",
@@ -1296,7 +1361,8 @@
       "official_url": "https://www.city.arakawa.tokyo.jp/a017/shisetsuannai/koukyoushisetsu/sports001.html",
       "is_indoor": true,
       "note": "大・小の温水プール。",
-      "source_url": "https://www.city.arakawa.tokyo.jp/a017/sport/shisetsuriyou/s-centerriyou.html"
+      "source_url": "https://www.city.arakawa.tokyo.jp/a017/sport/shisetsuriyou/s-centerriyou.html",
+      "fee_note": "2時間で一般600円、中学生以下250円。区内在住・在勤の65歳以上などは申請で無料。"
     },
     {
       "id": "4713c628-c4c1-49fe-956c-37885dbf5b78",
@@ -1323,7 +1389,8 @@
       "lng": 139.664703,
       "official_url": "https://www.city.itabashi.tokyo.jp/bunka/1005245/okunai/1005258.html",
       "is_indoor": true,
-      "source_url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/036/257/2023.10.1.pdf"
+      "source_url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/036/257/2023.10.1.pdf",
+      "fee_note": "2時間で大人（16歳以上）480円、65歳以上240円、小人（3歳〜中学生）150円（1時間は240円・120円・80円）。11回券あり。"
     },
     {
       "id": "47dcd78c-2aa2-463a-b8a0-c25c0d26c1b8",
@@ -1335,7 +1402,8 @@
       "lat": 35.778076,
       "lng": 139.641449,
       "official_url": "https://www.city.itabashi.tokyo.jp/bunka/1005245/okunai/index.html",
-      "source_url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/036/257/2023.10.1.pdf"
+      "source_url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/036/257/2023.10.1.pdf",
+      "fee_note": "2時間で大人（16歳以上）480円、65歳以上240円、小人（3歳〜中学生）150円（1時間は240円・120円・80円）。11回券あり。"
     },
     {
       "id": "ca900455-1764-4830-800b-0b68959b9402",
@@ -1347,7 +1415,8 @@
       "lat": 35.753315,
       "lng": 139.715729,
       "official_url": "https://www.city.itabashi.tokyo.jp/bunka/1005245/okunai/index.html",
-      "source_url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/036/257/2023.10.1.pdf"
+      "source_url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/036/257/2023.10.1.pdf",
+      "fee_note": "2時間で大人（16歳以上）480円、65歳以上240円、小人（3歳〜中学生）150円（1時間は240円・120円・80円）。11回券あり。"
     },
     {
       "id": "55cde51f-9542-4b38-84f3-ff42a27443a6",
@@ -1359,7 +1428,8 @@
       "lat": 35.757236,
       "lng": 139.675232,
       "official_url": "https://www.city.itabashi.tokyo.jp/bunka/1005245/okunai/index.html",
-      "source_url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/036/257/2023.10.1.pdf"
+      "source_url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/036/257/2023.10.1.pdf",
+      "fee_note": "2時間で大人（16歳以上）480円、65歳以上240円、小人（3歳〜中学生）150円（1時間は240円・120円・80円）。11回券あり。"
     },
     {
       "id": "c69b008a-db18-4ffc-881c-83a56587e600",
@@ -1375,7 +1445,8 @@
       "has_25m": true,
       "has_kids_pool": true,
       "note": "25m×6コース、幼児用プール。",
-      "source_url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/sports/oshirase/sportsguide.files/2026.pdf"
+      "source_url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/sports/oshirase/sportsguide.files/2026.pdf",
+      "fee_note": "1時間で一般200円、小・中学生100円、幼児無料。区内在住・在勤・在学の65〜74歳は100円。区内在住の小・中学生は土曜12時までの入場で2時間無料。"
     },
     {
       "id": "1dcc7b33-6012-4009-a5c9-95c81a7da79c",
@@ -1391,7 +1462,8 @@
       "has_25m": true,
       "has_kids_pool": true,
       "note": "25m×6コース、幼児用プール。",
-      "source_url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/sports/oshirase/sportsguide.files/2026.pdf"
+      "source_url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/sports/oshirase/sportsguide.files/2026.pdf",
+      "fee_note": "1時間で一般200円、小・中学生100円、幼児無料。区内在住・在勤・在学の65〜74歳は100円。区内在住の小・中学生は土曜12時までの入場で2時間無料。"
     },
     {
       "id": "26d47b88-73d5-4adf-9a90-61b1f94f10cb",
@@ -1407,7 +1479,8 @@
       "has_25m": true,
       "has_kids_pool": true,
       "note": "25m×6コース、幼児用プール。",
-      "source_url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/sports/oshirase/sportsguide.files/2026.pdf"
+      "source_url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/sports/oshirase/sportsguide.files/2026.pdf",
+      "fee_note": "1時間で一般200円、小・中学生100円、幼児無料。区内在住・在勤・在学の65〜74歳は100円。区内在住の小・中学生は土曜12時までの入場で2時間無料。"
     },
     {
       "id": "7bcee6d3-8e18-4e56-b0ab-74bd2e545042",
@@ -1423,7 +1496,8 @@
       "has_25m": true,
       "has_kids_pool": true,
       "note": "25m×6コース、幼児用プール（15m×5m）。",
-      "source_url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/sports/oshirase/sportsguide.files/2026.pdf"
+      "source_url": "https://www.city.nerima.tokyo.jp/kankomoyoshi/sports/oshirase/sportsguide.files/2026.pdf",
+      "fee_note": "1時間で一般200円、小・中学生100円、幼児無料。区内在住・在勤・在学の65〜74歳は100円。区内在住の小・中学生は土曜12時までの入場で2時間無料。"
     },
     {
       "id": "06970a48-7d5b-46cb-984a-2adcf16c32da",
@@ -1439,7 +1513,8 @@
       "has_25m": true,
       "has_kids_pool": true,
       "note": "25m×6コース、歩行用プール、幼児用プール、ジャグジー。",
-      "source_url": "https://www.city.nerima.tokyo.jp/shisetsu/shisetsu_yoyaku/sisetuitiran.html"
+      "source_url": "https://www.city.nerima.tokyo.jp/shisetsu/shisetsu_yoyaku/sisetuitiran.html",
+      "fee_note": "1時間で一般200円、小・中学生100円、幼児無料。区内在住・在勤・在学の65〜74歳は100円。区内在住の小・中学生は土曜12時までの入場で2時間無料。"
     },
     {
       "id": "bac6e3a9-29ef-4b6b-9763-ae74185325fd",
@@ -1456,7 +1531,8 @@
       "has_kids_pool": true,
       "season_note": "夏季のみ",
       "note": "夏季のみ（7月1日〜9月10日）。50m×20mの屋外プール、子ども用プール。駐車場なし。",
-      "source_url": "https://www.city.nerima.tokyo.jp/shisetsu/koen/pool/shaku.html"
+      "source_url": "https://www.city.nerima.tokyo.jp/shisetsu/koen/pool/shaku.html",
+      "fee_note": "1時間で一般200円、小・中学生100円、幼児無料。区内在住・在勤・在学の65〜74歳は100円。区内在住の小・中学生は土曜12時までの入場で2時間無料。"
     },
     {
       "id": "6e218d32-b223-4e17-8dc9-256d038c3899",
@@ -1472,7 +1548,8 @@
       "has_25m": true,
       "has_kids_pool": true,
       "note": "屋内温水プール25m×6コース（通年）、夏季のみの屋外子ども用プール。",
-      "source_url": "https://www.city.nerima.tokyo.jp/shisetsu/koen/pool/miharadai.html"
+      "source_url": "https://www.city.nerima.tokyo.jp/shisetsu/koen/pool/miharadai.html",
+      "fee_note": "1時間で一般200円、小・中学生100円、幼児無料。区内在住・在勤・在学の65〜74歳は100円。区内在住の小・中学生は土曜12時までの入場で2時間無料。"
     },
     {
       "id": "8f6f1024-7dce-4370-88a4-cd3adecb3707",
@@ -1486,7 +1563,8 @@
       "official_url": "https://www.city.nerima.tokyo.jp/shisetsu/community/chikukuminkan/asahityouminami.html",
       "is_indoor": true,
       "note": "個人利用は区内在住・在勤・在学者のみ。",
-      "source_url": "https://www.city.nerima.tokyo.jp/shisetsu/shisetsu_yoyaku/sisetuitiran.html"
+      "source_url": "https://www.city.nerima.tokyo.jp/shisetsu/shisetsu_yoyaku/sisetuitiran.html",
+      "fee_note": "個人利用は1時間100円、小・中学生50円、幼児無料、65〜74歳50円、75歳以上無料。区内在住・在勤・在学者のみ。"
     },
     {
       "id": "5cb6f95e-2be7-4d2a-8012-ce20901198f8",
@@ -1516,7 +1594,8 @@
       "is_indoor": true,
       "has_kids_pool": true,
       "note": "千寿本町小学校の地下1階。幼児用プールあり。",
-      "source_url": "https://www.waterworks.metro.tokyo.lg.jp/documents/d/waterworks/103003-adachi_251217"
+      "source_url": "https://www.waterworks.metro.tokyo.lg.jp/documents/d/waterworks/103003-adachi_251217",
+      "fee_note": "大人（16歳以上）550円、子ども（2歳〜中学生）100円（1回）。区内在住・在勤・在学の65歳以上は無料。"
     },
     {
       "id": "3292805c-135a-469d-bc11-b3861b9b2155",
@@ -1546,7 +1625,8 @@
       "lng": 139.863144,
       "official_url": "https://www.city.katsushika.lg.jp/institution/1030225/1000098/1006938/1017966.html",
       "is_indoor": true,
-      "source_url": "https://www.city.katsushika.lg.jp/institution/1030225/1000098/1006938/index.html"
+      "source_url": "https://www.city.katsushika.lg.jp/institution/1030225/1000098/1006938/index.html",
+      "fee_note": "1回2時間以内で高校生以上300円、小・中学生100円、幼児無料。超過料金あり。"
     },
     {
       "id": "d3c29cd5-d2f0-4c6d-b297-f774601993c6",
@@ -1589,7 +1669,8 @@
       "is_indoor": true,
       "has_25m": true,
       "note": "25m×13m。",
-      "source_url": "https://www.city.edogawa.tokyo.jp/documents/11781/r5syuyouseikatukankyousisetunogenkyou.pdf"
+      "source_url": "https://www.city.edogawa.tokyo.jp/documents/11781/r5syuyouseikatukankyousisetunogenkyou.pdf",
+      "fee_note": "高校生以上230円、小・中学生50円、幼児無料（1回）。回数券あり。"
     },
     {
       "id": "05ec7d4b-c792-41fb-b982-71a488f9398e",
@@ -1604,7 +1685,8 @@
       "is_indoor": true,
       "has_25m": true,
       "note": "大プール25m×15m、小プール15m×8m。",
-      "source_url": "https://www.city.edogawa.tokyo.jp/documents/11781/r5syuyouseikatukankyousisetunogenkyou.pdf"
+      "source_url": "https://www.city.edogawa.tokyo.jp/documents/11781/r5syuyouseikatukankyousisetunogenkyou.pdf",
+      "fee_note": "大人230円、小・中学生50円（1回）。"
     },
     {
       "id": "18e09d72-b80e-411e-abf1-f94cf15d9354",
@@ -1619,7 +1701,8 @@
       "has_50m": true,
       "season_note": "夏季のみ",
       "note": "夏季のみ（7月〜8月）。屋内の大プール50m×30m・小プール、屋外の円形プール。",
-      "source_url": "https://www.city.edogawa.tokyo.jp/documents/11781/r5syuyouseikatukankyousisetunogenkyou.pdf"
+      "source_url": "https://www.city.edogawa.tokyo.jp/documents/11781/r5syuyouseikatukankyousisetunogenkyou.pdf",
+      "fee_note": "大人230円（1回）。"
     },
     {
       "id": "4fbf173b-5f5c-4765-b475-c3bab9b61fc2",
@@ -1634,7 +1717,8 @@
       "is_indoor": true,
       "has_25m": true,
       "note": "25m×10.95m。",
-      "source_url": "https://www.city.edogawa.tokyo.jp/documents/11781/r5syuyouseikatukankyousisetunogenkyou.pdf"
+      "source_url": "https://www.city.edogawa.tokyo.jp/documents/11781/r5syuyouseikatukankyousisetunogenkyou.pdf",
+      "fee_note": "大人230円、小・中学生50円（1回）。"
     },
     {
       "id": "90a7ad5b-2b0d-434a-a089-adc4b6c02d8e",
@@ -1649,7 +1733,8 @@
       "is_indoor": true,
       "has_25m": true,
       "note": "25m×12m。",
-      "source_url": "https://www.city.edogawa.tokyo.jp/documents/11781/r5syuyouseikatukankyousisetunogenkyou.pdf"
+      "source_url": "https://www.city.edogawa.tokyo.jp/documents/11781/r5syuyouseikatukankyousisetunogenkyou.pdf",
+      "fee_note": "大人230円、小・中学生50円（1回）。"
     }
   ]
 }

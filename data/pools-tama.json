@@ -17,7 +17,8 @@
       "has_kids_pool": true,
       "season_note": "夏季のみ",
       "note": "一般プール25m×13m、幼児用プール（深さ30cm）。",
-      "source_url": "https://www.city.hachioji.tokyo.jp/shisetsu/104/p012079.html"
+      "source_url": "https://www.city.hachioji.tokyo.jp/shisetsu/104/p012079.html",
+      "fee_note": "大人2時間250円、中学生以下100円（土曜は中学生以下無料）。延長1時間ごとに大人120円・中学生以下50円。"
     },
     {
       "id": "4febd673-44b8-4181-9134-1a77ea9c083d",
@@ -33,7 +34,8 @@
       "has_kids_pool": true,
       "season_note": "夏季のみ",
       "note": "施設の老朽化に伴う設備不良のため休止中。変形プール（約25m×15m）、幼児用プール。",
-      "source_url": "https://www.city.hachioji.tokyo.jp/shisetsu/104/p012080.html"
+      "source_url": "https://www.city.hachioji.tokyo.jp/shisetsu/104/p012080.html",
+      "fee_note": "大人2時間250円、中学生以下100円（土曜は中学生以下無料）。延長1時間ごとに大人120円・中学生以下50円。"
     },
     {
       "id": "1f99fd3e-024a-491f-8350-b4fea0737668",
@@ -65,7 +67,8 @@
       "has_25m": true,
       "has_kids_pool": true,
       "note": "安全上の問題・台風被害・老朽化のため営業休止中（再開時期未定）。一般プール25m×10m、幼児用プール、ジャグジー。",
-      "source_url": "https://www.city.hachioji.tokyo.jp/shisetsu/104/p012083.html"
+      "source_url": "https://www.city.hachioji.tokyo.jp/shisetsu/104/p012083.html",
+      "fee_note": "1時間で高校生以上200円、中学生以下70円（1時間延長ごとに追加料金）。土曜とこどもの日は中学生以下2時間まで無料。"
     },
     {
       "id": "85f8b239-0aae-44cd-a107-b56c70de3119",
@@ -79,7 +82,8 @@
       "official_url": "https://www.city.hachioji.tokyo.jp/shisetsu/104/p012082.html",
       "is_indoor": true,
       "note": "JR・京王高尾駅南口から徒歩約13分。",
-      "source_url": "https://www.city.hachioji.tokyo.jp/shisetsu/104/p012082.html"
+      "source_url": "https://www.city.hachioji.tokyo.jp/shisetsu/104/p012082.html",
+      "fee_note": "大人2時間400円（1時間200円）、3歳〜中学生140円（1時間70円）。土曜は中学生以下無料、市内在住60歳以上は無料（要証明）。"
     },
     {
       "id": "fa336709-e5fb-4caf-a70c-6026616e2af2",
@@ -93,7 +97,8 @@
       "official_url": "https://www.city.musashino.lg.jp/shisetsu_annai/bunka_sports/suports_yagaikatsudo/1000607.html",
       "is_indoor": true,
       "note": "武蔵野総合体育館内。",
-      "source_url": "https://www.city.musashino.lg.jp/shisetsu_annai/bunka_sports/suports_yagaikatsudo/1000607.html"
+      "source_url": "https://www.city.musashino.lg.jp/shisetsu_annai/bunka_sports/suports_yagaikatsudo/1000607.html",
+      "fee_note": "2時間で大人（高校生以上）400円、小・中学生100円、未就学児無料。市民は市民カードで半額。"
     },
     {
       "id": "fa2db8ac-40ee-4344-9ffc-ed208b2fe38b",
@@ -108,7 +113,8 @@
       "is_indoor": false,
       "season_note": "夏季のみ",
       "note": "夏季のみ（7月上旬〜9月中旬）。",
-      "source_url": "https://www.city.musashino.lg.jp/shisetsu_annai/bunka_sports/suports_yagaikatsudo/1000607.html"
+      "source_url": "https://www.city.musashino.lg.jp/shisetsu_annai/bunka_sports/suports_yagaikatsudo/1000607.html",
+      "fee_note": "2時間で大人（高校生以上）400円、小・中学生100円、未就学児無料。市民は市民カードで半額。"
     },
     {
       "id": "b56ce30e-54fe-466f-a0ba-f5cc98b09732",
@@ -126,7 +132,8 @@
       "has_water_slide": true,
       "season_note": "夏季のみ",
       "note": "夏季のみ。50m×20m（50mレーンは平日午前のみ）、流水プール（1周164m）、幼児用プール、ウォータースライダー2基。",
-      "source_url": "https://www.city.fuchu.tokyo.jp/shisetu/supotu/puru/sogopu-ru.html"
+      "source_url": "https://www.city.fuchu.tokyo.jp/shisetu/supotu/puru/sogopu-ru.html",
+      "fee_note": "2時間で市内料金：大人150円、高校生100円、子ども50円。市外料金は倍額。超過1時間ごとに半額。"
     },
     {
       "id": "b3fcedce-f749-4a6c-95a1-b1ad87f323a6",
@@ -142,7 +149,8 @@
       "has_50m": true,
       "season_note": "夏季のみ",
       "note": "夏季のみ。50m×20m（日中は20mレーン、夜間は50mレーン）。駐車場なし。",
-      "source_url": "https://www.city.fuchu.tokyo.jp/shisetu/supotu/puru/shimin.html"
+      "source_url": "https://www.city.fuchu.tokyo.jp/shisetu/supotu/puru/shimin.html",
+      "fee_note": "昼間（第1〜3部）は1部ごとに大人100円、高校生60円、子ども30円。ナイター（第4部）は大人170円、高校生110円、子ども70円。市外在住者は倍額。"
     },
     {
       "id": "8c480401-504e-45fc-8ee7-a123d4d157a9",
@@ -159,7 +167,8 @@
       "has_kids_pool": true,
       "season_note": "夏季のみ",
       "note": "夏季のみ。25m×15m、子ども用プール。JR南武線西府駅から徒歩約2分。",
-      "source_url": "https://www.city.fuchu.tokyo.jp/shisetu/supotu/puru/nishifu.html"
+      "source_url": "https://www.city.fuchu.tokyo.jp/shisetu/supotu/puru/nishifu.html",
+      "fee_note": "1部ごとに大人100円、高校生60円、子ども30円。市外在住者は倍額。"
     },
     {
       "id": "da4687f1-c0b2-44ab-af54-bf40fdd32a5a",
@@ -175,7 +184,8 @@
       "has_25m": true,
       "has_kids_pool": true,
       "note": "25m×6コース、楕円形の幼児用プール（約12m×7m）。",
-      "source_url": "https://www.city.fuchu.tokyo.jp/shisetu/supotu/puru/onsuipuru.html"
+      "source_url": "https://www.city.fuchu.tokyo.jp/shisetu/supotu/puru/onsuipuru.html",
+      "fee_note": "2時間で市内料金：大人400円、高校生250円、子ども150円。市外料金は倍額。2時間を超えると1時間ごとに超過料金。"
     },
     {
       "id": "15bec987-2e89-49a1-ab0c-988b578c0b27",
@@ -224,7 +234,8 @@
       "has_water_slide": true,
       "season_note": "夏季のみ",
       "note": "夏季のみ。25m×15m、幼児用プール、流水プール（1周176.8m）、スライダー（直線3本・曲線1本）。",
-      "source_url": "https://www.city.ome.tokyo.jp/site/ome-tky/65594.html"
+      "source_url": "https://www.city.ome.tokyo.jp/site/ome-tky/65594.html",
+      "fee_note": "大人300円、中学生以下100円。"
     },
     {
       "id": "d09785ab-b1a8-4cd7-908b-8f104dfb484e",
@@ -240,7 +251,8 @@
       "is_indoor": true,
       "has_25m": true,
       "note": "25m×6コース。駐車場なし。",
-      "source_url": "https://www.city.machida.tokyo.jp/bunka/sport/sport/sport05.html"
+      "source_url": "https://www.city.machida.tokyo.jp/bunka/sport/sport/sport05.html",
+      "fee_note": "大人460円、65歳以上150円、小・中学生無料（7月21日〜8月31日は150円）（1回）。11枚つづり回数券あり。"
     },
     {
       "id": "41a58c88-3cf4-49aa-9e03-55ef5838c324",
@@ -256,7 +268,8 @@
       "is_indoor": true,
       "has_25m": true,
       "note": "25m×6コース。",
-      "source_url": "https://www.city.machida.tokyo.jp/bunka/sport/sport/sport05.html"
+      "source_url": "https://www.city.machida.tokyo.jp/bunka/sport/sport/sport05.html",
+      "fee_note": "大人460円、65歳以上150円、小・中学生無料（7月21日〜8月31日は150円）（1回）。11枚つづり回数券あり。"
     },
     {
       "id": "52d1670f-6903-48f9-98b8-2a1120c2b393",
@@ -272,7 +285,8 @@
       "is_indoor": true,
       "has_25m": true,
       "note": "25m×6コース。",
-      "source_url": "https://www.city.machida.tokyo.jp/bunka/sport/sport/sport05.html"
+      "source_url": "https://www.city.machida.tokyo.jp/bunka/sport/sport/sport05.html",
+      "fee_note": "大人460円、65歳以上150円、小・中学生無料（7月21日〜8月31日は150円）（1回）。11枚つづり回数券あり。"
     },
     {
       "id": "c05428b9-f4a6-450c-8ac2-502a974e8a31",
@@ -328,7 +342,8 @@
       "is_indoor": true,
       "has_25m": true,
       "note": "25m×10m。更衣室は地下1階。",
-      "source_url": "https://www.city.hino.lg.jp/shisetsu/sports/pool/1005910.html"
+      "source_url": "https://www.city.hino.lg.jp/shisetsu/sports/pool/1005910.html",
+      "fee_note": "2時間で大人400円、子ども150円。延長1時間ごとに大人200円・子ども80円。"
     },
     {
       "id": "918a2d73-21b8-44e4-8c8e-6478957227a9",
@@ -394,7 +409,8 @@
       "has_water_slide": true,
       "season_note": "夏季のみ",
       "note": "夏季のみ（7月第2日曜〜9月第1土曜）。50mプール、25mプール、幼児用プール、スライダープール。",
-      "source_url": "https://www.city.fussa.tokyo.jp/map/sports/1001675.html"
+      "source_url": "https://www.city.fussa.tokyo.jp/map/sports/1001675.html",
+      "fee_note": "2時間で大人（高校生以上）200円、中学生以下100円。超過1時間ごとに大人100円・小人50円。"
     },
     {
       "id": "0b443fb0-c5ed-42bd-a925-a7317400768b",
@@ -439,7 +455,8 @@
       "has_25m": true,
       "has_kids_pool": true,
       "note": "25mプールと幼児用プールあり。",
-      "source_url": "https://www.city.hamura.tokyo.jp/prsite/0000002101.html"
+      "source_url": "https://www.city.hamura.tokyo.jp/prsite/0000002101.html",
+      "fee_note": "1時間で市内在住・在勤の高校生以上250円、3歳〜中学生60円。市外は高校生以上370円、3歳〜中学生90円。"
     },
     {
       "id": "b91ffa1e-3106-4829-ab3e-11ce523a5a5b",
@@ -498,7 +515,8 @@
       "is_indoor": true,
       "has_50m": true,
       "note": "50mプール、流水プール、ジャグジーあり。",
-      "source_url": "https://www.city.tama.lg.jp/kenkofukushi/1008238/sports/shisetsu/1008349.html"
+      "source_url": "https://www.city.tama.lg.jp/kenkofukushi/1008238/sports/shisetsu/1008349.html",
+      "fee_note": "夏期は2時間で大人620円、小・中学生310円、60歳以上310円（超過1時間ごとに大人300円）。夏期以外は1日で大人620円、小・中学生310円、60歳以上310円。"
     },
     {
       "id": "37b6c134-4192-46ec-bf77-1d01947069e3",
@@ -516,7 +534,8 @@
       "has_water_slide": true,
       "season_note": "夏季のみ",
       "note": "25m×7コース、流水プール、スライダー、幼児用プールあり。",
-      "source_url": "https://www.city.inagi.tokyo.jp/shisetsu/sports/1004857/1004858/1004862.html"
+      "source_url": "https://www.city.inagi.tokyo.jp/shisetsu/sports/1004857/1004858/1004862.html",
+      "fee_note": "2時間で大人（中学生以上）330円、子ども80円、未就学児無料。超過1時間ごとに大人160円・子ども40円。"
     },
     {
       "id": "2dff5fd4-f4ca-4210-ad7e-4707e1972edb",

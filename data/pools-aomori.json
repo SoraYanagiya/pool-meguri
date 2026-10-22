@@ -16,7 +16,8 @@
       "has_25m": true,
       "has_50m": true,
       "note": "県立施設。2024年4月開館の屋内50mプール（可動壁で25m×2面に転換可、可動床で水深0〜2.2m）と、室内温水25mプール（8レーン）。",
-      "source_url": "https://aomori-sportspark.jp/new_athletic_park/pool50m/"
+      "source_url": "https://aomori-sportspark.jp/new_athletic_park/pool50m/",
+      "fee_note": "1時間で一般200円、高校生140円、小・中学生80円。"
     },
     {
       "id": "321fbd38-410b-42a6-8364-241026cf017e",
@@ -32,7 +33,8 @@
       "has_25m": true,
       "has_kids_pool": true,
       "note": "25m×7レーン、15.5m×5レーンの初心者用プール、幼児用プール。休館日は第3月曜日。",
-      "source_url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/006/276/sports_facilities.csv"
+      "source_url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/006/276/sports_facilities.csv",
+      "fee_note": "1時間で一般270円、高校生190円、中学生110円、小学生60円、幼児30円。"
     },
     {
       "id": "25fe0383-cda3-4bbf-a339-d24ed289d3eb",
@@ -49,7 +51,8 @@
       "has_kids_pool": true,
       "season_note": "夏季のみ",
       "note": "夏季（7〜8月）のみ。25m×8レーン、子供用プール、幼児用プール。",
-      "source_url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/006/276/sports_facilities.csv"
+      "source_url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/006/276/sports_facilities.csv",
+      "fee_note": "一般・大学生130円、高校生80円、中学生50円、3歳〜小学生30円。3歳未満と70歳以上は無料。"
     },
     {
       "id": "4c0a5e19-57c7-42f8-a2b4-8e4746d8ab01",
@@ -110,7 +113,8 @@
       "has_kids_pool": true,
       "season_note": "夏季のみ",
       "note": "7月上旬〜8月末。日本水連公認50m（12コース）、子供プール2、幼児プール。",
-      "source_url": "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/sportsshinkoka/1/2668.html"
+      "source_url": "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/sportsshinkoka/1/2668.html",
+      "fee_note": "一般（大学生含む）340円、高校生220円、中学生110円、小学生以下50円（1回）。6回券あり。"
     },
     {
       "id": "58de80d1-f57a-4fb9-8736-b121311fe48a",
@@ -232,7 +236,8 @@
       "has_kids_pool": true,
       "has_water_slide": true,
       "note": "25m×6コース、幼児用プール、ウォータースライダー、ジャグジー。休館日は月曜日。",
-      "source_url": "https://www.city.misawa.lg.jp/index.cfm/12,2362,69,304,html"
+      "source_url": "https://www.city.misawa.lg.jp/index.cfm/12,2362,69,304,html",
+      "fee_note": "一般・大学生530円、高校生320円、中学生以下110円（1回）。"
     },
     {
       "id": "65a75740-21bd-436f-9905-1d9a808dee6c",
@@ -307,7 +312,8 @@
       "is_indoor": true,
       "has_25m": true,
       "note": "25m×6コース、歩行プール（15m×5.5m）。",
-      "source_url": "https://www.city.hirosaki.aomori.jp/gaiyou/shisetsu/2014-1208-1500-onnsui.html"
+      "source_url": "https://www.city.hirosaki.aomori.jp/gaiyou/shisetsu/2014-1208-1500-onnsui.html",
+      "fee_note": "一般330円、高校生220円、小学4年生〜中学生110円（1回）。11回券あり。"
     },
     {
       "id": "4efbc640-6c67-4835-95eb-30a3c15e287a",
@@ -368,7 +374,8 @@
       "is_indoor": true,
       "has_kids_pool": true,
       "note": "温水15m×3レーン、幼児プール。",
-      "source_url": "https://city.hirosaki.aomori.jp/jouhou/keikaku/files/6_sport2025.pdf"
+      "source_url": "https://city.hirosaki.aomori.jp/jouhou/keikaku/files/6_sport2025.pdf",
+      "fee_note": "一般330円、高校生220円、小学4年生〜中学生110円（1回）。11回券あり。"
     },
     {
       "id": "3c8008af-2773-43fe-b757-b318eada4e10",
@@ -619,7 +626,8 @@
       "has_25m": true,
       "has_kids_pool": true,
       "note": "25mプール、幼児プール、運動浴・歩行浴。屋外の流れるプールは7月中旬〜8月下旬のみ。番地の位置を特定できなかったため地図には表示しない。",
-      "source_url": "https://rurubu.jp/andmore/spot/80002441"
+      "source_url": "https://rurubu.jp/andmore/spot/80002441",
+      "fee_note": "全館入館で大人（高校生以上）1,340円、子ども（3歳〜中学生）690円、70歳以上860円、3歳未満無料。"
     },
     {
       "id": "abb00a48-d79b-4a89-bc29-9decb739c5f7",
